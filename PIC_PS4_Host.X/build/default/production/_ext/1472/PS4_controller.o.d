@@ -1,0 +1,19 @@
+build/default/production/_ext/1472/PS4_controller.o:  \
+../PS4_controller.c  \
+../USB/usb_host_generic_PS4.h  \
+../USB/usb.h  \
+../Common/GenericTypeDefs.h  \
+../Common/Compiler.h  \
+../usb_config.h  \
+../USB/usb_common.h  \
+../USB/usb_ch9.h  \
+../USB/usb_host.h  \
+../USB/usb_hal.h  \
+../USB/usb_hal_pic24.h  \
+../PS4_controller.h  \
+../Common/GenericTypeDefs.h  \
+../Common/uart2.h  \
+../PS4_SPI.h  \
+../Common/GenericTypeDefs.h  \
+../outputs.h  \
+../main.h 

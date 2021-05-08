@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>file:/D:/PIC/PIC_PS3_Host/trunk/outputs.c</url>
+            <line>87</line>
+            <line>118</line>
+        </file>
+        <file>
+            <url>file:/D:/PIC/PIC_PS3_Host/trunk/main.c</url>
+            <line>262</line>
+            <line>1879</line>
+        </file>
+    </editor-bookmarks>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="11">
+        <file>
+            <url>file:/D:/PIC/PIC_PS4_Host/trunk/outputs.c</url>
+            <bookmark id="3">
+                <name/>
+                <line>1252</line>
+                <key/>
+            </bookmark>
+            <bookmark id="9">
+                <name/>
+                <line>1520</line>
+                <key/>
+            </bookmark>
+            <bookmark id="4">
+                <name/>
+                <line>1566</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>file:/D:/PIC/PIC_PS3_Host/trunk/main.c</url>
+            <bookmark id="0">
+                <name/>
+                <line>263</line>
+                <key/>
+            </bookmark>
+            <bookmark id="0">
+                <name/>
+                <line>1897</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>disassembly/listing.disasm</url>
+            <bookmark id="10">
+                <name/>
+                <line>3358</line>
+                <key/>
+            </bookmark>
+            <bookmark id="6">
+                <name/>
+                <line>3366</line>
+                <key/>
+            </bookmark>
+            <bookmark id="8">
+                <name/>
+                <line>3370</line>
+                <key/>
+            </bookmark>
+            <bookmark id="7">
+                <name/>
+                <line>3372</line>
+                <key/>
+            </bookmark>
+            <bookmark id="5">
+                <name/>
+                <line>4848</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>file:/D:/PIC/PIC_PS4_Host/trunk/main.c</url>
+            <bookmark id="1">
+                <name/>
+                <line>637</line>
+                <key/>
+            </bookmark>
+            <bookmark id="2">
+                <name/>
+                <line>937</line>
+                <key/>
+            </bookmark>
+            <bookmark id="11">
+                <name/>
+                <line>1958</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>file:/D:/PIC/PIC_PS3_Host/trunk/outputs.c</url>
+            <bookmark id="0">
+                <name/>
+                <line>87</line>
+                <key/>
+            </bookmark>
+            <bookmark id="0">
+                <name/>
+                <line>118</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/main.c</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/USB/usb_host_generic_PS4.h</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/PS4_controller.c</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/outputs.h</file>
+            <file>file:/C:/Program%20Files%20(x86)/Microchip/MPLAB%20C30/support/PIC24F/h/p24FJ64GB106.h</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/usb_config.c</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/outputs.c</file>
+            <file>file:/D:/Servoshock2/servoshock2_repo/PIC_PS4_Host_Firmware/USB/usb_host_generic_PS4.c</file>
+        </group>
+    </open-files>
+</project-private>
