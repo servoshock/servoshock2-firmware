@@ -618,6 +618,7 @@ unsigned int DataEERead(unsigned int addr) {
     if (!i) {
         SetaddrNotFound(1);
         TBLPAG = savedTBLPAG;
+        UART2PrintString("ADDR Not found.");
         return (0xFFFF);
     }
 

@@ -125,70 +125,70 @@ ${OBJECTDIR}/_ext/2108356922/uart2.o: ../Common/uart2.c  nbproject/Makefile-${CN
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o.ok ${OBJECTDIR}/_ext/2108356922/uart2.o.err 
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2108356922/uart2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/2108356922/uart2.o.d" -o ${OBJECTDIR}/_ext/2108356922/uart2.o ../Common/uart2.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2108356922/uart2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/2108356922/uart2.o.d" -o ${OBJECTDIR}/_ext/2108356922/uart2.o ../Common/uart2.c    
 	
 ${OBJECTDIR}/_ext/869223802/DEE\ Emulation\ 16-bit.o: ../DEE\ Emulation\ 16-bit/DEE\ Emulation\ 16-bit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/869223802" 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o".d 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o".ok ${OBJECTDIR}/_ext/869223802/DEE\ Emulation\ 16-bit.o.err 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" -o "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" "../DEE Emulation 16-bit/DEE Emulation 16-bit.c"    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" -o "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" "../DEE Emulation 16-bit/DEE Emulation 16-bit.c"    
 	
 ${OBJECTDIR}/_ext/1360907413/usb_host.o: ../USB/usb_host.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360907413" 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o.ok ${OBJECTDIR}/_ext/1360907413/usb_host.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host.o ../USB/usb_host.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host.o ../USB/usb_host.c    
 	
 ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o: ../USB/usb_host_generic_PS4.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360907413" 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.ok ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o ../USB/usb_host_generic_PS4.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o ../USB/usb_host_generic_PS4.c    
 	
 ${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o.ok ${OBJECTDIR}/_ext/1472/main.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d" -o ${OBJECTDIR}/_ext/1472/main.o ../main.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d" -o ${OBJECTDIR}/_ext/1472/main.o ../main.c    
 	
 ${OBJECTDIR}/_ext/1472/usb_config.o: ../usb_config.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o.ok ${OBJECTDIR}/_ext/1472/usb_config.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_config.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/usb_config.o.d" -o ${OBJECTDIR}/_ext/1472/usb_config.o ../usb_config.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_config.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/usb_config.o.d" -o ${OBJECTDIR}/_ext/1472/usb_config.o ../usb_config.c    
 	
 ${OBJECTDIR}/_ext/1472/outputs.o: ../outputs.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o.ok ${OBJECTDIR}/_ext/1472/outputs.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/outputs.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/outputs.o.d" -o ${OBJECTDIR}/_ext/1472/outputs.o ../outputs.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/outputs.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/outputs.o.d" -o ${OBJECTDIR}/_ext/1472/outputs.o ../outputs.c    
 	
 ${OBJECTDIR}/_ext/1472/functional_test.o: ../functional_test.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o.ok ${OBJECTDIR}/_ext/1472/functional_test.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/functional_test.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/functional_test.o.d" -o ${OBJECTDIR}/_ext/1472/functional_test.o ../functional_test.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/functional_test.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/functional_test.o.d" -o ${OBJECTDIR}/_ext/1472/functional_test.o ../functional_test.c    
 	
 ${OBJECTDIR}/_ext/1472/PS4_SPI.o: ../PS4_SPI.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o.ok ${OBJECTDIR}/_ext/1472/PS4_SPI.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_SPI.o ../PS4_SPI.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_SPI.o ../PS4_SPI.c    
 	
 ${OBJECTDIR}/_ext/1472/PS4_controller.o: ../PS4_controller.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o.ok ${OBJECTDIR}/_ext/1472/PS4_controller.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_controller.o ../PS4_controller.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_controller.o ../PS4_controller.c    
 	
 else
 ${OBJECTDIR}/_ext/2108356922/uart2.o: ../Common/uart2.c  nbproject/Makefile-${CND_CONF}.mk
@@ -196,70 +196,70 @@ ${OBJECTDIR}/_ext/2108356922/uart2.o: ../Common/uart2.c  nbproject/Makefile-${CN
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o.d 
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o.ok ${OBJECTDIR}/_ext/2108356922/uart2.o.err 
 	@${RM} ${OBJECTDIR}/_ext/2108356922/uart2.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/2108356922/uart2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/2108356922/uart2.o.d" -o ${OBJECTDIR}/_ext/2108356922/uart2.o ../Common/uart2.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/2108356922/uart2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/2108356922/uart2.o.d" -o ${OBJECTDIR}/_ext/2108356922/uart2.o ../Common/uart2.c    
 	
 ${OBJECTDIR}/_ext/869223802/DEE\ Emulation\ 16-bit.o: ../DEE\ Emulation\ 16-bit/DEE\ Emulation\ 16-bit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/869223802" 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o".d 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o".ok ${OBJECTDIR}/_ext/869223802/DEE\ Emulation\ 16-bit.o.err 
 	@${RM} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" -o "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" "../DEE Emulation 16-bit/DEE Emulation 16-bit.c"    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o.d" -o "${OBJECTDIR}/_ext/869223802/DEE Emulation 16-bit.o" "../DEE Emulation 16-bit/DEE Emulation 16-bit.c"    
 	
 ${OBJECTDIR}/_ext/1360907413/usb_host.o: ../USB/usb_host.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360907413" 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o.ok ${OBJECTDIR}/_ext/1360907413/usb_host.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host.o ../USB/usb_host.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host.o ../USB/usb_host.c    
 	
 ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o: ../USB/usb_host_generic_PS4.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360907413" 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.ok ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o ../USB/usb_host_generic_PS4.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o.d" -o ${OBJECTDIR}/_ext/1360907413/usb_host_generic_PS4.o ../USB/usb_host_generic_PS4.c    
 	
 ${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o.ok ${OBJECTDIR}/_ext/1472/main.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d" -o ${OBJECTDIR}/_ext/1472/main.o ../main.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d" -o ${OBJECTDIR}/_ext/1472/main.o ../main.c    
 	
 ${OBJECTDIR}/_ext/1472/usb_config.o: ../usb_config.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o.ok ${OBJECTDIR}/_ext/1472/usb_config.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_config.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_config.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/usb_config.o.d" -o ${OBJECTDIR}/_ext/1472/usb_config.o ../usb_config.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_config.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/usb_config.o.d" -o ${OBJECTDIR}/_ext/1472/usb_config.o ../usb_config.c    
 	
 ${OBJECTDIR}/_ext/1472/outputs.o: ../outputs.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o.ok ${OBJECTDIR}/_ext/1472/outputs.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/outputs.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/outputs.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/outputs.o.d" -o ${OBJECTDIR}/_ext/1472/outputs.o ../outputs.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/outputs.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/outputs.o.d" -o ${OBJECTDIR}/_ext/1472/outputs.o ../outputs.c    
 	
 ${OBJECTDIR}/_ext/1472/functional_test.o: ../functional_test.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o.ok ${OBJECTDIR}/_ext/1472/functional_test.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/functional_test.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/functional_test.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/functional_test.o.d" -o ${OBJECTDIR}/_ext/1472/functional_test.o ../functional_test.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/functional_test.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/functional_test.o.d" -o ${OBJECTDIR}/_ext/1472/functional_test.o ../functional_test.c    
 	
 ${OBJECTDIR}/_ext/1472/PS4_SPI.o: ../PS4_SPI.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o.ok ${OBJECTDIR}/_ext/1472/PS4_SPI.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_SPI.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_SPI.o ../PS4_SPI.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_SPI.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_SPI.o ../PS4_SPI.c    
 	
 ${OBJECTDIR}/_ext/1472/PS4_controller.o: ../PS4_controller.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o.ok ${OBJECTDIR}/_ext/1472/PS4_controller.o.err 
 	@${RM} ${OBJECTDIR}/_ext/1472/PS4_controller.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -mconst-in-code -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_controller.o ../PS4_controller.c    
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION) -Wall -I".." -I"../USB" -I"../Common" -Os -fschedule-insns -fschedule-insns2 -MMD -MF "${OBJECTDIR}/_ext/1472/PS4_controller.o.d" -o ${OBJECTDIR}/_ext/1472/PS4_controller.o ../PS4_controller.c    
 	
 endif
 

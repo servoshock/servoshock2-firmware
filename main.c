@@ -2171,27 +2171,22 @@ int main(void) {
     //Initialize non-volatile memory
     DataEEInit();
     dataEEFlags.val = 0;
+    errorCode = DataEEWrite(0, DEFAULTS_INITIALIZED_FLAG);
     UART2PrintString("Firmware Code: ");
     UART2PutDecInt(DataEERead(DEFAULTS_INITIALIZED_FLAG));
     UART2PrintString("\n\r");
-    if (DataEERead(DEFAULTS_INITIALIZED_FLAG) != VERSION_CODE) {
+    if (DataEERead(DEFAULTS_INITIALIZED_FLAG) != VERSION_CODE) {        
         LoadDefaultSettings(TRUE, 0);
         errorCode = DataEEWrite(VERSION_CODE, DEFAULTS_INITIALIZED_FLAG);
         if (errorCode == 0) {
-            UART2PrintString("Defaults Loaded.\n\r");
+            UART2PrintString("New FW Detected.\n\r");
             SaveSettings();
-        } else {
-            UART2PrintString("EEPROM Write Error: ");
-            UART2PutDec(errorCode);
-            UART2PrintString("\n\rErasing page.\n\r");
-            ErasePage(0,0);
-            ErasePage(0,1);
             Reset();
-            
-        }
-    } else {
+        } 
+    } 
+    else {
         LoadSavedSettings();
-        UART2PrintString("Loading Saved Settings. \n\r");
+        UART2PrintString("Loaded Saved Settings. \n\r");
     }
 
     ResetOutputs(BTControllerInPtr); //initialize outputs and put in an artificial nominal input so it doesn't read all zeros.
@@ -2213,17 +2208,18 @@ int main(void) {
         if (UART2DataReceived())
         {
             uartIn = U2RXREG;
-            if (uartIn == 0x1B) //If 'Esc' entered from keyboard
-            {
-                PrintMenu();
+            switch(uartIn){
+                case 0x1B:
+                    PrintMenu();
+                    break;
+                case 'T':
+                    if (charbuf[1] == 'R' && charbuf[0] == 'S' && uartIn == 'T') Reset();
+                    break;
+                case 'l':
+                    LoadSavedSettings();
             }
-            else
-            {
-                //UART2PutChar(uartIn);               
-                if (charbuf[1] == 'R' && charbuf[0] == 'S' && uartIn == 'T') Reset();
-                charbuf[1] = charbuf[0];
-                charbuf[0] = uartIn;
-            }
+            charbuf[1] = charbuf[0];
+            charbuf[0] = uartIn;
         }
 
 #ifdef DEBUG_MODE

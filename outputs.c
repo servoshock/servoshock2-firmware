@@ -248,14 +248,14 @@ void LoadDefaultSettings(BOOL loadAll, unsigned int index) {
             ServoSettings[i].sensitivity = 10;
             ServoSettings[i].direction = FORWARD;
             ServoSettings[i].absOrRel = ABSOLUTE;
-            ServoSettings[i].filterStrength = 0;
+//            ServoSettings[i].filterStrength = 0;
             ServoSettings[i].touchpadMode = TPAD;
             ServoSettings[i].touchpadSplit = SPLIT;
             ServoSettings[i].trim = 0;
             ServoSettings[i].zeroPosition = 0; //used for calibration of stick
             ServoSettings[i].holdRecall = OFF;
             ServoSettings[i].servoRecallValue = 3000;
-
+            ServoSettings[i].buttonRemap = NONE;
 
             switch (i) //specific cases
             {
@@ -296,7 +296,7 @@ Overview:
   Save or load settings.
 
 Input:
-  if save==1, then save, if save==0, then load
+  if save_switch==1, then save, if save==0, then load
 
 Output:
  None
@@ -307,12 +307,29 @@ void SaveLoadSubroutine(BOOL save_switch) {
     unsigned int i = 0;
     unsigned int j = 0;
     unsigned int memory_index = EEPROM_CONFIG_SETTINGS_START;
+    unsigned int error;
 
     //servo settings
     for (i = 0; i < NUM_SERVOS; i++) {
         for (j = 0; j < SERVO_SETTINGS_LENGTH; j++) {
-            if (save_switch) DataEEWrite(ServoSettings[i].array[j], memory_index);
-            else ServoSettings[i].array[j] = DataEERead(memory_index);
+            /*
+            UART2PrintString("S");
+            UART2PutDecInt(i);
+            UART2PrintString("-");
+            UART2PutDecInt(j);
+            UART2PrintString(": ");
+            */
+            if (save_switch){
+                error = DataEEWrite(ServoSettings[i].array[j], memory_index);
+                if (error != 0) UART2PutDecInt(error);
+            }
+            else {
+                ServoSettings[i].array[j] = DataEERead(memory_index);
+            }
+            /*
+            UART2PutHexWord(ServoSettings[i].array[j]);
+            UART2PrintString("\n\r");
+             */
             memory_index++;
         }
     }
@@ -320,17 +337,39 @@ void SaveLoadSubroutine(BOOL save_switch) {
     //button settings
     for (i = 0; i < NUM_BUTTONS; i++) {
         for (j = 0; j < 4; j++) {
+            UART2PutDecInt(memory_index);
+            /*
+            UART2PrintString("B");
+            UART2PutDecInt(i);
+            UART2PrintString("-");
+            UART2PutDecInt(j);
+            UART2PrintString(": ");
+            */
+            
             if (save_switch) DataEEWrite(ButtonSettings[i].array[j], memory_index);
             else ButtonSettings[i].array[j] = DataEERead(memory_index);
+            
+            /*
+            UART2PutHexWord(ButtonSettings[i].array[j]);
+            UART2PrintString("\n\r");
+             */
             memory_index++;
         }
     }
-
+    
     //universal settings
     if (save_switch) DataEEWrite(triggerLink, memory_index);
     else triggerLink = DataEERead(memory_index);
+    /*
+    UART2PutDecInt(memory_index);
+    UART2PrintString("Trig Link:");
+    UART2PutHexWord(triggerLink);
+    UART2PrintString("\n\r");
+     */
+    
     memory_index++;
 
+    
     if (save_switch) DataEEWrite(spiBusMode, memory_index);
     else spiBusMode = DataEERead(memory_index);
     memory_index++;
@@ -366,8 +405,13 @@ void SaveLoadSubroutine(BOOL save_switch) {
     if (save_switch) DataEEWrite(PPMOutput, memory_index);
     else PPMOutput = DataEERead(memory_index);
     memory_index++;
+    /*
+    UART2PrintString("PPM:");
+    UART2PutHexWord(PPMOutput);
+    UART2PrintString("\n\r");
+    */
     
-    UART2PutDec(memory_index);
+    UART2PutDecInt(memory_index);
     UART2PrintString(" EEPROM words used.\n\r");
 
     //when adding settings here, don't forget to update the default load settings function above
@@ -390,7 +434,7 @@ Output:
 
  *******************************************************************************/
 void LoadSavedSettings(void) {
-    UART2PrintString("Loading saved settings...");
+    UART2PrintString("Loading saved settings...\n\r");
     SaveLoadSubroutine(0);
     UART2PrintString("Done\n\r");
 }
@@ -792,6 +836,41 @@ BOOL ConfigOutput(BOOL configFlag) {
                     UART2PrintString("Incremental input mode.\n\r");
                 }
             }
+            
+            if (GetNewPress()->square) //mecanum steering
+            {
+                ServoSettings[index].buttonRemap++;
+                ServoSettings[index].buttonRemap = ServoSettings[index].buttonRemap % 8;
+                switch (ServoSettings[index].buttonRemap) {
+                    case NO_REMAP:
+                        UART2PrintString("Servo not remapped.\n\r");
+                        break;
+                    case LEFT_RIGHT:
+                        UART2PrintString("Servo remapped to D-pad left/right.\n\r");
+                        break;
+                    case UP_DOWN:
+                        UART2PrintString("Servo remapped to D-pad up/down.\n\r");
+                        break;
+                    case SQUARE_CIRCLE:
+                        UART2PrintString("Servo remapped to square/circle.\n\r");
+                        break;
+                    case TRIANGLE_CROSS:
+                        UART2PrintString("Servo remapped to D-pad triangle/cross.\n\r");
+                        break;
+                    case LR_BUMPERS:
+                        UART2PrintString("Servo remapped to D-pad left/right bumpers.\n\r");
+                        break;
+                    case JOYSTICK_PUSHBUTTONS:
+                        UART2PrintString("Servo remapped to left/right joystick pushbuttons.\n\r");
+                        break;
+                    case SHARE_OPTIONS:
+                        UART2PrintString("Servo remapped to share/options.\n\r");
+                        break;                    
+                    default:
+                        UART2PrintString("Error.\n\r");
+                        break;
+                }
+            }
 
         }//end settings if rstick is held down
 
@@ -974,7 +1053,7 @@ BOOL ConfigOutput(BOOL configFlag) {
                     UpdateRumbleFeedback(2);
                 }
                 UART2PrintString("Deadband = ");
-                UART2PutDecSInt(ServoSettings[index].deadband);
+                UART2PutDec(ServoSettings[index].deadband);
                 UART2PrintString("\n\r");
             }
 
@@ -987,7 +1066,7 @@ BOOL ConfigOutput(BOOL configFlag) {
                     UpdateRumbleFeedback(2);
                 }
                 UART2PrintString("Deadband = ");
-                UART2PutDecSInt(ServoSettings[index].deadband);
+                UART2PutDec(ServoSettings[index].deadband);
                 UART2PrintString("\n\r");
             }
             //Increase sensitivity
@@ -999,7 +1078,7 @@ BOOL ConfigOutput(BOOL configFlag) {
                     UpdateRumbleFeedback(2);
                 }
                 UART2PrintString("Sensitivity = ");
-                UART2PutDecSInt(ServoSettings[index].sensitivity);
+                UART2PutDec(ServoSettings[index].sensitivity);
                 UART2PrintString("\n\r");
             }
 
@@ -1012,7 +1091,7 @@ BOOL ConfigOutput(BOOL configFlag) {
                     UpdateRumbleFeedback(2);
                 }
                 UART2PrintString("Sensitivity = ");
-                UART2PutDecSInt(ServoSettings[index].sensitivity);
+                UART2PutDec(ServoSettings[index].sensitivity);
                 UART2PrintString("\n\r");
             }
 
@@ -1358,10 +1437,11 @@ void UpdateServoOutputs(void) {
     //unsigned int OCxCON1_REG_PTRS_buffer[NUM_SERVOS];
 
 #define TPAD_INCREMENT_SENSITIVITY 70
-    
+
     for (i = 0; i < NUM_SERVOS; i++) {
         analogsBuffer[i] = GetAnalogs()->array[i]; //GetAnalogs() returns a volatile array, make shadow copy just in case
-        
+
+        //process touchpad
         if (i == L_TPAD_X || i == L_TPAD_Y || i == R_TPAD_X || i == R_TPAD_Y){
             if (ServoSettings[i].touchpadSplit == WHOLE) {
                 if (i == L_TPAD_X || i == R_TPAD_X){
@@ -1445,7 +1525,7 @@ void UpdateServoOutputs(void) {
                     }
                 }
             }
-        }
+        }      
     }
 
     if (GetNewPress()->lStickPress == TRUE) {
@@ -1594,13 +1674,49 @@ void UpdateServoOutputs(void) {
                         sensorSignal = (signed int) analogsBuffer[i] - ServoSettings[i].zeroPosition;
                         break;
                 }
+                       
+                        //button override
+                switch (ServoSettings[i].buttonRemap) {
+                    case LEFT_RIGHT:
+                        if (DPAD_LEFT && !DPAD_RIGHT)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!DPAD_LEFT && DPAD_RIGHT) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case UP_DOWN:
+                        if (DPAD_UP && !DPAD_DOWN)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!DPAD_UP && DPAD_DOWN) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case SQUARE_CIRCLE:
+                        if (SQUARE && !CIRCLE)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!SQUARE && CIRCLE) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case TRIANGLE_CROSS:
+                        if (TRIANGLE && !CROSS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!TRIANGLE && CROSS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case LR_BUMPERS:
+                        if (LBUMPER && !RBUMPER)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!LBUMPER && RBUMPER) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case JOYSTICK_PUSHBUTTONS:
+                        if (LSTICK_PRESS && !RSTICK_PRESS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!LSTICK_PRESS && RSTICK_PRESS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    case SHARE_OPTIONS:
+                        if (SHARE && !OPTIONS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
+                        else if (!SHARE && OPTIONS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
+                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        break;
+                    default:
+                        break;
+                }
                 break;
         }
-        
-        
-
-        
-        
         
         // special case for remapping r-stick y-axis when using mecanum mixing remapping
         if (mecanumSteering >= MECANUM_REMAP_4 && i == (mecanumSteering + 2)) {
@@ -2038,6 +2154,7 @@ void PrintMenu(void)
     UART2PrintString("Touchpad split vs whole: R-Stick + D-Pad Down\n\r");
     UART2PrintString("Joystick differential drive mixer : L-Stick + Cross\n\r");
     UART2PrintString("Joystick mecanum wheel mixer: L-Stick + Square\n\r");
+    UART2PrintString("Remap channel to button pair: R-Stick + Square\n\r");
     
     UART2PrintString("\n\r===Button Adjustments===\n\r");
     UART2PrintString("Test output while configuring: R-Stick\n\r");

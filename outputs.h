@@ -150,24 +150,35 @@ typedef enum {
 typedef enum {
     OFF, L_STICK, R_STICK
 } HOLD_RECALL;
-#define SERVO_SETTINGS_LENGTH 13 //numbert of integers for servo settings
 
+typedef enum {
+    NO_REMAP,
+    LEFT_RIGHT,
+    UP_DOWN,
+    SQUARE_CIRCLE,
+    TRIANGLE_CROSS,
+    LR_BUMPERS,
+    JOYSTICK_PUSHBUTTONS,
+    SHARE_OPTIONS
+} BUTTON_PAIRS;
+
+#define SERVO_SETTINGS_LENGTH 12 //numbert of integers for servo settings
 typedef union _SERVO_SETTINGS {
-
-    struct __attribute__((aligned(2))) {
+    struct __attribute__((packed)) {
+        unsigned char deadband;
+        unsigned char sensitivity;
         signed int offset;
         signed int range;
-        signed int deadband;
-        signed int sensitivity;
         SERVO_DIR direction;
         STICK_ABSOLUTE_RELATIVE absOrRel;
         TOUCHPAD_MODE touchpadMode;
         TOUCHPAD_SPLIT touchpadSplit;
-        signed int filterStrength;
+//        signed int filterStrength;
         signed int trim;
         signed int zeroPosition;
         HOLD_RECALL holdRecall;
         unsigned int servoRecallValue;
+        BUTTON_PAIRS buttonRemap;
     };
     unsigned int array[SERVO_SETTINGS_LENGTH];
 } SERVO_SETTINGS;
