@@ -307,14 +307,18 @@ void SaveLoadSubroutine(BOOL save_switch) {
     unsigned int i = 0;
     unsigned int j = 0;
     unsigned int memory_index = EEPROM_CONFIG_SETTINGS_START;
-    unsigned int error;
+    unsigned int error=0;
 
     //servo settings
     for (i = 0; i < NUM_SERVOS; i++) {
         for (j = 0; j < SERVO_SETTINGS_LENGTH; j++) {
             if (save_switch){
                 error = DataEEWrite(ServoSettings[i].array[j], memory_index);
-                if (error != 0) UART2PutDecInt(error);
+                if (error != 0){
+                    UART2PrintString("ERR: ");
+                    UART2PutDecInt(error);
+                    UART2PrintString("-");
+                }
             }
             else {
                 ServoSettings[i].array[j] = DataEERead(memory_index);
@@ -337,8 +341,13 @@ void SaveLoadSubroutine(BOOL save_switch) {
     //button settings
     for (i = 0; i < NUM_BUTTONS; i++) {
         for (j = 0; j < 4; j++) {
-            if (save_switch) DataEEWrite(ButtonSettings[i].array[j], memory_index);
+            if (save_switch) error = DataEEWrite(ButtonSettings[i].array[j], memory_index);
             else ButtonSettings[i].array[j] = DataEERead(memory_index);
+            if (error != 0){
+                UART2PrintString("ERR: ");
+                UART2PutDecInt(error);
+                UART2PrintString("-");
+            }
 #ifdef DEBUG_EEPROM
             UART2PutDecInt(memory_index);
             UART2PrintString("B");
