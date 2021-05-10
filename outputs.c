@@ -312,13 +312,6 @@ void SaveLoadSubroutine(BOOL save_switch) {
     //servo settings
     for (i = 0; i < NUM_SERVOS; i++) {
         for (j = 0; j < SERVO_SETTINGS_LENGTH; j++) {
-            /*
-            UART2PrintString("S");
-            UART2PutDecInt(i);
-            UART2PrintString("-");
-            UART2PutDecInt(j);
-            UART2PrintString(": ");
-            */
             if (save_switch){
                 error = DataEEWrite(ServoSettings[i].array[j], memory_index);
                 if (error != 0) UART2PutDecInt(error);
@@ -326,10 +319,17 @@ void SaveLoadSubroutine(BOOL save_switch) {
             else {
                 ServoSettings[i].array[j] = DataEERead(memory_index);
             }
-            /*
+#define DEBUG_EEPROM
+#ifdef DEBUG_EEPROM
+            UART2PutDecInt(memory_index);
+            UART2PrintString("S");
+            UART2PutDecInt(i);
+            UART2PrintString("-");
+            UART2PutDecInt(j);
+            UART2PrintString(": ");
             UART2PutHexWord(ServoSettings[i].array[j]);
             UART2PrintString("\n\r");
-             */
+#endif
             memory_index++;
         }
     }
@@ -337,22 +337,18 @@ void SaveLoadSubroutine(BOOL save_switch) {
     //button settings
     for (i = 0; i < NUM_BUTTONS; i++) {
         for (j = 0; j < 4; j++) {
+            if (save_switch) DataEEWrite(ButtonSettings[i].array[j], memory_index);
+            else ButtonSettings[i].array[j] = DataEERead(memory_index);
+#ifdef DEBUG_EEPROM
             UART2PutDecInt(memory_index);
-            /*
             UART2PrintString("B");
             UART2PutDecInt(i);
             UART2PrintString("-");
             UART2PutDecInt(j);
             UART2PrintString(": ");
-            */
-            
-            if (save_switch) DataEEWrite(ButtonSettings[i].array[j], memory_index);
-            else ButtonSettings[i].array[j] = DataEERead(memory_index);
-            
-            /*
             UART2PutHexWord(ButtonSettings[i].array[j]);
             UART2PrintString("\n\r");
-             */
+#endif
             memory_index++;
         }
     }
@@ -405,11 +401,11 @@ void SaveLoadSubroutine(BOOL save_switch) {
     if (save_switch) DataEEWrite(PPMOutput, memory_index);
     else PPMOutput = DataEERead(memory_index);
     memory_index++;
-    /*
+#ifdef DEBUG_EEPROM
     UART2PrintString("PPM:");
     UART2PutHexWord(PPMOutput);
     UART2PrintString("\n\r");
-    */
+#endif
     
     UART2PutDecInt(memory_index);
     UART2PrintString(" EEPROM words used.\n\r");

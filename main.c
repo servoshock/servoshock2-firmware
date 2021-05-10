@@ -19,7 +19,7 @@
  the processed values that WOULD have been output if not overridden instead of 
  the actual output register value.  This was changed because the actual output can be 
  overwritten by the Arduino.
- 
+ *3.01 5/10/21 Added function to allow servo to be remapped to buttons
 Software License Agreement
 
 The software supplied herewith by Microchip Technology Incorporated
@@ -2171,7 +2171,6 @@ int main(void) {
     //Initialize non-volatile memory
     DataEEInit();
     dataEEFlags.val = 0;
-    errorCode = DataEEWrite(0, DEFAULTS_INITIALIZED_FLAG);
     UART2PrintString("Firmware Code: ");
     UART2PutDecInt(DataEERead(DEFAULTS_INITIALIZED_FLAG));
     UART2PrintString("\n\r");
