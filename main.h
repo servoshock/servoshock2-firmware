@@ -28,8 +28,8 @@
 #define _PGC _RB6
 #define _PGD _RB7
 
-#define FIRMWARE_REV "3.01"
-#define VERSION_CODE 301
+#define FIRMWARE_REV "3.10"
+#define VERSION_CODE 310
 //Flag to load defaults on first startup
 #define DEFAULTS_INITIALIZED_FLAG 0
 
