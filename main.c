@@ -20,7 +20,7 @@
  the actual output register value.  This was changed because the actual output can be 
  overwritten by the Arduino.
  *3.01 5/10/21 Added function to allow servo to be remapped to buttons
- *3.10 03/08/22 Fixed bug in servo button remapping code
+ *3.11 03/08/22 Fixed bug in servo button remapping code, fixed bug in tilt incremental mode initial servo state
 Software License Agreement
 
 The software supplied herewith by Microchip Technology Incorporated

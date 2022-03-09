@@ -1,4 +1,4 @@
-Microchip Technology Inc, vv3_31 (A) 
+Microchip Technology Inc, vv3_31 (A) í
 
 Tool Name:
   c:\program files (x86)\microchip\mplab c30\bin\bin\..\bin/pic30-elf-ld.exe
@@ -78,7 +78,7 @@ section                    address   length (PC units)   length (bytes) (dec)
 .dinit                       0xa80               0x10e           0x195  (405)
 .text                        0xb8e                0x32            0x4b  (75)
 .init.delay32                0xbc0                0x1c            0x2a  (42)
-_02eb4cb06097a7c9            0xc00               0x800           0xc00  (3072)
+_02e44cb0622807b5            0xc00               0x800           0xc00  (3072)
 .const                      0x1400              0x1c52          0x2a7b  (10875)
 .text                       0x3052              0x5c18          0x8a24  (35364)
 .text                       0x8c6a               0xaaa           0xfff  (4095)
@@ -99,7 +99,7 @@ section                    address      alignment gaps    total length  (dec)
 .ndata                       0xee0                   0             0xc  (12)
 .nbss                        0xeec                   0             0x2  (2)
 .bss                         0xeee                   0            0x12  (18)
-_03ab56906097a54c           0x1000                   0            0x10  (16)
+_03b33690622807b5           0x1000                   0            0x10  (16)
 .heap                       0x1010                   0          0x2710  (10000)
 
                         Total data memory used (bytes):         0x2e20  (11808) 72%
@@ -2240,9 +2240,9 @@ __c30_signature
  .nbss              0x0e66         0x1c build/default/production/_ext/1360907413/usb_host_generic_PS4.o
                     0x0e72                  _gc_DevData
 
-_03ab56906097a54c
+_03b33690622807b5
                     0x1000         0x10
- _03ab56906097a54c
+ _03b33690622807b5
                     0x1000         0x10 build/default/production/_ext/1360907413/usb_host.o
 
 .nbss               0x0e82         0x5e
@@ -2274,9 +2274,9 @@ _03ab56906097a54c
 .heap               0x1010       0x2710
  .heap              0x1010       0x2710 heap
 
-_02eb4cb06097a7c9
+_02e44cb0622807b5
                     0x8c00        0x800 load address 0x000c00  
- _02eb4cb06097a7c9
+ _02e44cb0622807b5
                     0x8c00        0x800 build/default/production/_ext/869223802/DEE Emulation 16-bit.o
                     0x8c00                  _emulationPages
 

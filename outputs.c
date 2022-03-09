@@ -73,7 +73,7 @@ static volatile unsigned int* const OCxRS_REG_PTRS[12] = {&OC1RS, &OC2RS, &OC3RS
 static volatile unsigned int* const OCxCON1_REG_PTRS[12] = {&OC1CON1, &OC2CON1, &OC3CON1, &OC4CON1, &OC5CON1, &OC6CON1, &OC7CON1, &OC8CON1, &OC9CON1, &oc10con1, &oc11con1, &oc12con1};
 
 static SERVO_SETTINGS ServoSettings[NUM_SERVOS];
-static signed long int servoState[NUM_SERVOS] = {300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 30000, 30000};
+static signed long int servoState[NUM_SERVOS] = {300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000, 300000};
 
 ///////////////CONFIG SETTINGS/////////////////////////
 //see LoadDefaultSettings for default settings.
@@ -1554,7 +1554,7 @@ void UpdateServoOutputs(void) {
         else if ((ServoSettings[i].absOrRel == RELATIVE && ServoSettings[i].holdRecall == L_STICK && GetNewPress()->lStickPress) || //recall home position
                 (ServoSettings[i].absOrRel == RELATIVE && ServoSettings[i].holdRecall == R_STICK && GetNewPress()->rStickPress)) {
             ServoSettings[i].servoRecallValue = DataEERead(EEPROM_SERVO_HOME + i);
-            servoState[i] = ((signed long) (ServoSettings[i].servoRecallValue))*100; //recall home position, multiply by 100 cancel out divide when stored
+             servoState[i] = ((signed long) (ServoSettings[i].servoRecallValue))*100; //recall home position, multiply by 100 cancel out divide when stored
         } //if the hold/recall function is on in absolute mode, overwrite the stick value with stored value
         else if ((ServoSettings[i].absOrRel == ABSOLUTE && ServoSettings[i].holdRecall == R_STICK && stickHoldToggleR == TRUE) ||
                 (ServoSettings[i].absOrRel == ABSOLUTE && ServoSettings[i].holdRecall == L_STICK && stickHoldToggleL == TRUE)) {
@@ -1833,9 +1833,8 @@ void UpdateServoOutputs(void) {
         else if (ServoSettings[i].absOrRel == RELATIVE) {
             //scale to normalize sensitivity.  Multiply everything by 100, then divide by 100 counter discretization noise when scaling.
  
-            servoState[i] = servoState[i] + direction * scaledSignal[i];             
+            servoState[i] = servoState[i] + direction * scaledSignal[i];    
     
-
             range = 300000 + 1000 * (signed long) (ServoSettings[i].offset + ServoSettings[i].range); //set stops, beware of overflow!
             range2 = 300000 + 1000 * (signed long) (ServoSettings[i].offset - ServoSettings[i].range); //set stops
 
