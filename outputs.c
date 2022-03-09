@@ -1683,39 +1683,39 @@ void UpdateServoOutputs(void) {
                         //button override
                 switch (ServoSettings[i].buttonRemap) {
                     case LEFT_RIGHT:
-                        if (DPAD_LEFT && !DPAD_RIGHT)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!DPAD_LEFT && DPAD_RIGHT) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (DPAD_LEFT && !DPAD_RIGHT)  sensorSignal = 127;
+                        else if (!DPAD_LEFT && DPAD_RIGHT) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case UP_DOWN:
-                        if (DPAD_UP && !DPAD_DOWN)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!DPAD_UP && DPAD_DOWN) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (DPAD_UP && !DPAD_DOWN)  sensorSignal = 127;
+                        else if (!DPAD_UP && DPAD_DOWN) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case SQUARE_CIRCLE:
-                        if (SQUARE && !CIRCLE)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!SQUARE && CIRCLE) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (SQUARE && !CIRCLE)  sensorSignal = 127;
+                        else if (!SQUARE && CIRCLE) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case TRIANGLE_CROSS:
-                        if (TRIANGLE && !CROSS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!TRIANGLE && CROSS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (TRIANGLE && !CROSS)  sensorSignal = 127;
+                        else if (!TRIANGLE && CROSS) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case LR_BUMPERS:
-                        if (LBUMPER && !RBUMPER)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!LBUMPER && RBUMPER) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (LBUMPER && !RBUMPER)  sensorSignal = 127;
+                        else if (!LBUMPER && RBUMPER) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case JOYSTICK_PUSHBUTTONS:
-                        if (LSTICK_PRESS && !RSTICK_PRESS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!LSTICK_PRESS && RSTICK_PRESS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (LSTICK_PRESS && !RSTICK_PRESS)  sensorSignal = 127;
+                        else if (!LSTICK_PRESS && RSTICK_PRESS) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     case SHARE_OPTIONS:
-                        if (SHARE && !OPTIONS)  sensorSignal = 127 - ServoSettings[i].zeroPosition;
-                        else if (!SHARE && OPTIONS) sensorSignal = -128 - ServoSettings[i].zeroPosition;
-                        else sensorSignal = ServoSettings[i].zeroPosition;
+                        if (SHARE && !OPTIONS)  sensorSignal = 127;
+                        else if (!SHARE && OPTIONS) sensorSignal = -128;
+                        else sensorSignal = 0;
                         break;
                     default:
                         break;
