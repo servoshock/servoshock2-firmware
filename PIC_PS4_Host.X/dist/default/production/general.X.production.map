@@ -1,4 +1,4 @@
-Microchip Technology Inc, vv3_31 (A) í
+Microchip Technology Inc, vv3_31 (A) É
 
 Tool Name:
   c:\program files (x86)\microchip\mplab c30\bin\bin\..\bin/pic30-elf-ld.exe
@@ -80,10 +80,10 @@ section                    address   length (PC units)   length (bytes) (dec)
 .init.delay32                0xbc0                0x1c            0x2a  (42)
 _02e44cb0622807b5            0xc00               0x800           0xc00  (3072)
 .const                      0x1400              0x1c52          0x2a7b  (10875)
-.text                       0x3052              0x5c18          0x8a24  (35364)
-.text                       0x8c6a               0xaaa           0xfff  (4095)
+.text                       0x3052              0x5c32          0x8a4b  (35403)
+.text                       0x8c84               0xaaa           0xfff  (4095)
 
-                     Total program memory used (bytes):         0xdf68  (57192) 87%
+                     Total program memory used (bytes):         0xdf8f  (57231) 87%
 
 
 Data Memory  [Origin = 0x800, Length = 0x4000]
@@ -244,302 +244,302 @@ External Symbols in Program Memory (by address):
                   0x003848                  _UpdateServoOutputs
                   0x004184                  __T3Interrupt
                   0x004228                  _ResetOutputs
-                  0x004296                  _GetSpiBusMode
-                  0x00429a                  _GetLEDBrightness
-                  0x00429e                  _GetLEDColorSetting
-                  0x0042a2                  _PrintIndexLabel
-                  0x0042de                  _LoadDefaultSettings
-                  0x0043ae                  _ConfigOutput
-                  0x004f9c                  _PrintMenu
-                  0x005020                  __USB_FindEndpoint
-                  0x005050                  _USBHostClearEndpointErrors
-                  0x005078                  _USBHostDeviceSpecificClientDriver
-                  0x005080                  _USBHostDeviceStatus
-                  0x0050ba                  __USB_ResetDATA0
-                  0x0050f6                  __USB_InitControlWrite
-                  0x00514a                  __USB_InitControlRead
-                  0x005192                  _USBHostIssueDeviceRequest
-                  0x00526a                  __USB_InitRead
-                  0x0052c6                  _USBHostRead
-                  0x00532e                  _USBHostResetDevice
-                  0x00534c                  _USBHostResumeDevice
-                  0x005368                  __USB_TransferInProgress
-                  0x00539a                  _USBHostSetDeviceConfiguration
-                  0x0053d4                  _USBHostSetNAKTimeout
-                  0x005404                  __USB_NotifyClients
-                  0x005460                  _USBHostSuspendDevice
-                  0x005480                  __USB_CheckCommandAndEnumerationAttempts
-                  0x0054ae                  __USB_FindDeviceLevelClientDriver
-                  0x00557e                  __USB_FreeConfigMemory
-                  0x0055d0                  __USB_FreeMemory
-                  0x005604                  _USBHostInit
-                  0x005638                  _USBHostShutdown
-                  0x005660                  _USBHostTerminateTransfer
-                  0x005680                  _USBHostTransferIsComplete
-                  0x0056de                  _USBHostVbusEvent
-                  0x005700                  __USB_InitWrite
-                  0x00575c                  _USBHostWrite
-                  0x0057c4                  __USB_FindClassDriver
-                  0x00584a                  __USB_ParseConfigurationDescriptor
-                  0x005a76                  _USBHostTasks
-                  0x0060ba                  __USB_FindServiceEndpoint
-                  0x00614c                  __USB_SetBDT
-                  0x006248                  __USB_SendToken
-                  0x006282                  __USB_FindNextToken
-                  0x006608                  __USB_NotifyDataClients
-                  0x00663e                  __USB1Interrupt
-                  0x00693a                  _ResetStates
-                  0x00694e                  _InitializeSystem
-                  0x006a2e                  _ParseRx1PS4BT
-                  0x006cb6                  _ParseRx2PS4BT
-                  0x006ee6                  _ParseRx1PS4Wire
-                  0x006ef2                  _ParseRx1SpaceNavigator
-                  0x006f08                  _ParseRx1Thrustmaster
-                  0x006f14                  _Write_HCI_Command
-                  0x006f32                  _Write_ACL_Command
-                  0x006f54                  _WriteOutputReport
-                  0x006f8c                  _ManageStateBluetooth
-                  0x0078c2                  _ManageStateWire
-                  0x007b54                  _ManageStateSpaceNavigator
-                  0x007b78                  _USB_ApplicationEventHandler
-                  0x007c88                  _main
-                  0x007ebe                  __T4Interrupt
-                  0x007f28                  __SPI1Interrupt
-                  0x007f8e                  __INT1Interrupt
-                  0x007fc6                  __AddressError
-                  0x007fea                  __StackError
-                  0x00800e                  __MathError
-                  0x008032                  _CopyPS4Report
-                  0x008042                  _CopySpaceNavigatorReport
-                  0x0082ee                  _CopyThrustmasterReport
-                  0x00830a                  _UpdateCurrentStateBuffer
-                  0x00893c                  _ResetIdleTimer
-                  0x008940                  _CheckIdle
-                  0x008a36                  _UpdateNewPress
-                  0x008ada                  _GetButtonPress
-                  0x008ade                  _GetPressDuration
-                  0x008ae2                  _GetNewPress
-                  0x008ae6                  _GetAnalogs
-                  0x008aea                  _GetTouchpads
-                  0x008aee                  _GetPS4Report
-                  0x008af2                  _GetOutputPacket
-                  0x008af6                  _GetOutputReportWire
-                  0x008afa                  _GetOutputReportBT
-                  0x008afe                  _SetLEDColor
-                  0x008bce                  _SetLEDColorRGB
-                  0x008bdc                  _SetRumbleH
-                  0x008bea                  _SetRumbleL
-                  0x008bf8                  _UpdateBatteryDisplay
-                  0x008c4a                  _UpdateRumbleFeedback
-                  0x008c66                  _GetIdleTimer
-                  0x008c6a                  _SetConnectedDeviceType
-                  0x008c6e                  _SetEpInterruptIn
-                  0x008c72                  _SetEpInterruptOut
-                  0x008c76                  _SetEpBulkIn
-                  0x008c7a                  _SetEpBulkOut
-                  0x008c7e                  _USBHostGenericInitBT
-                  0x008cde                  _USBHostGenericInitWire
-                  0x008d36                  _USBHostInitSpaceMouse
-                  0x008d8c                  _USBHostInitThrustmaster
-                  0x008de8                  _USBHostGenericEventHandler
-                  0x008e8c                  _USBHostGenericGetDeviceAddress
-                  0x008eb2                  _USBHostGenericRead
-                  0x008efa                  _USBHostGenericWrite
-                  0x008f3c                  _USBHostGenericClassRequest
-                  0x008f88                  _USBHostGenericAclWrite
-                  0x008fca                  _USBHostGenericAclRead
-                  0x009012                  _GetEpInterruptIn
-                  0x009018                  _GetEpInterruptOut
-                  0x00901e                  _GetEpBulkIn
-                  0x009024                  _GetEpBulkOut
-                  0x00902a                  _GetConnectedDeviceType
-                  0x00902e                  _InitSPI
-                  0x0090e2                  _LoadOutputStatePacketButtons
-                  0x009216                  _LoadOutputStatePacketServos
-                  0x0092ec                  _GetSpiInputPacket
-                  0x0092f0                  _GetSpiOutputStatePacket
-                  0x0092f4                  _UART2GetBaudError
-                  0x0092f6                  _UART2GetChar
-                  0x00930e                  _UART2Init
-                  0x009322                  _UART2IsPressed
-                  0x009336                  _UART2PutChar
-                  0x009344                  _UART2PrintString
-                  0x00935a                  _UART2PutDec
-                  0x0093a6                  _UART2PutSDec
-                  0x0093be                  _UART2PutDecInt
-                  0x009406                  _UART2PutDecSInt
-                  0x00941e                  _UART2PutDecLong
-                  0x00947a                  _UART2PutDecSLong
-                  0x009496                  _UART2PutHex
-                  0x0094ae                  _UART2PutHexWord
-                  0x0094d4                  _UART2PutHexDWord
-                  0x009538                  _UART2Char2Hex
-                  0x009570                  _UART2Hex2Char
-                  0x009582                  _UART2ClrError
-                  0x00958c                  _TestCases
+                  0x0042b0                  _GetSpiBusMode
+                  0x0042b4                  _GetLEDBrightness
+                  0x0042b8                  _GetLEDColorSetting
+                  0x0042bc                  _PrintIndexLabel
+                  0x0042f8                  _LoadDefaultSettings
+                  0x0043c8                  _ConfigOutput
+                  0x004fb6                  _PrintMenu
+                  0x00503a                  __USB_FindEndpoint
+                  0x00506a                  _USBHostClearEndpointErrors
+                  0x005092                  _USBHostDeviceSpecificClientDriver
+                  0x00509a                  _USBHostDeviceStatus
+                  0x0050d4                  __USB_ResetDATA0
+                  0x005110                  __USB_InitControlWrite
+                  0x005164                  __USB_InitControlRead
+                  0x0051ac                  _USBHostIssueDeviceRequest
+                  0x005284                  __USB_InitRead
+                  0x0052e0                  _USBHostRead
+                  0x005348                  _USBHostResetDevice
+                  0x005366                  _USBHostResumeDevice
+                  0x005382                  __USB_TransferInProgress
+                  0x0053b4                  _USBHostSetDeviceConfiguration
+                  0x0053ee                  _USBHostSetNAKTimeout
+                  0x00541e                  __USB_NotifyClients
+                  0x00547a                  _USBHostSuspendDevice
+                  0x00549a                  __USB_CheckCommandAndEnumerationAttempts
+                  0x0054c8                  __USB_FindDeviceLevelClientDriver
+                  0x005598                  __USB_FreeConfigMemory
+                  0x0055ea                  __USB_FreeMemory
+                  0x00561e                  _USBHostInit
+                  0x005652                  _USBHostShutdown
+                  0x00567a                  _USBHostTerminateTransfer
+                  0x00569a                  _USBHostTransferIsComplete
+                  0x0056f8                  _USBHostVbusEvent
+                  0x00571a                  __USB_InitWrite
+                  0x005776                  _USBHostWrite
+                  0x0057de                  __USB_FindClassDriver
+                  0x005864                  __USB_ParseConfigurationDescriptor
+                  0x005a90                  _USBHostTasks
+                  0x0060d4                  __USB_FindServiceEndpoint
+                  0x006166                  __USB_SetBDT
+                  0x006262                  __USB_SendToken
+                  0x00629c                  __USB_FindNextToken
+                  0x006622                  __USB_NotifyDataClients
+                  0x006658                  __USB1Interrupt
+                  0x006954                  _ResetStates
+                  0x006968                  _InitializeSystem
+                  0x006a48                  _ParseRx1PS4BT
+                  0x006cd0                  _ParseRx2PS4BT
+                  0x006f00                  _ParseRx1PS4Wire
+                  0x006f0c                  _ParseRx1SpaceNavigator
+                  0x006f22                  _ParseRx1Thrustmaster
+                  0x006f2e                  _Write_HCI_Command
+                  0x006f4c                  _Write_ACL_Command
+                  0x006f6e                  _WriteOutputReport
+                  0x006fa6                  _ManageStateBluetooth
+                  0x0078dc                  _ManageStateWire
+                  0x007b6e                  _ManageStateSpaceNavigator
+                  0x007b92                  _USB_ApplicationEventHandler
+                  0x007ca2                  _main
+                  0x007ed8                  __T4Interrupt
+                  0x007f42                  __SPI1Interrupt
+                  0x007fa8                  __INT1Interrupt
+                  0x007fe0                  __AddressError
+                  0x008004                  __StackError
+                  0x008028                  __MathError
+                  0x00804c                  _CopyPS4Report
+                  0x00805c                  _CopySpaceNavigatorReport
+                  0x008308                  _CopyThrustmasterReport
+                  0x008324                  _UpdateCurrentStateBuffer
+                  0x008956                  _ResetIdleTimer
+                  0x00895a                  _CheckIdle
+                  0x008a50                  _UpdateNewPress
+                  0x008af4                  _GetButtonPress
+                  0x008af8                  _GetPressDuration
+                  0x008afc                  _GetNewPress
+                  0x008b00                  _GetAnalogs
+                  0x008b04                  _GetTouchpads
+                  0x008b08                  _GetPS4Report
+                  0x008b0c                  _GetOutputPacket
+                  0x008b10                  _GetOutputReportWire
+                  0x008b14                  _GetOutputReportBT
+                  0x008b18                  _SetLEDColor
+                  0x008be8                  _SetLEDColorRGB
+                  0x008bf6                  _SetRumbleH
+                  0x008c04                  _SetRumbleL
+                  0x008c12                  _UpdateBatteryDisplay
+                  0x008c64                  _UpdateRumbleFeedback
+                  0x008c80                  _GetIdleTimer
+                  0x008c84                  _SetConnectedDeviceType
+                  0x008c88                  _SetEpInterruptIn
+                  0x008c8c                  _SetEpInterruptOut
+                  0x008c90                  _SetEpBulkIn
+                  0x008c94                  _SetEpBulkOut
+                  0x008c98                  _USBHostGenericInitBT
+                  0x008cf8                  _USBHostGenericInitWire
+                  0x008d50                  _USBHostInitSpaceMouse
+                  0x008da6                  _USBHostInitThrustmaster
+                  0x008e02                  _USBHostGenericEventHandler
+                  0x008ea6                  _USBHostGenericGetDeviceAddress
+                  0x008ecc                  _USBHostGenericRead
+                  0x008f14                  _USBHostGenericWrite
+                  0x008f56                  _USBHostGenericClassRequest
+                  0x008fa2                  _USBHostGenericAclWrite
+                  0x008fe4                  _USBHostGenericAclRead
+                  0x00902c                  _GetEpInterruptIn
+                  0x009032                  _GetEpInterruptOut
+                  0x009038                  _GetEpBulkIn
+                  0x00903e                  _GetEpBulkOut
+                  0x009044                  _GetConnectedDeviceType
+                  0x009048                  _InitSPI
+                  0x0090fc                  _LoadOutputStatePacketButtons
+                  0x009230                  _LoadOutputStatePacketServos
+                  0x009306                  _GetSpiInputPacket
+                  0x00930a                  _GetSpiOutputStatePacket
+                  0x00930e                  _UART2GetBaudError
+                  0x009310                  _UART2GetChar
+                  0x009328                  _UART2Init
+                  0x00933c                  _UART2IsPressed
+                  0x009350                  _UART2PutChar
+                  0x00935e                  _UART2PrintString
+                  0x009374                  _UART2PutDec
+                  0x0093c0                  _UART2PutSDec
+                  0x0093d8                  _UART2PutDecInt
+                  0x009420                  _UART2PutDecSInt
+                  0x009438                  _UART2PutDecLong
+                  0x009494                  _UART2PutDecSLong
+                  0x0094b0                  _UART2PutHex
+                  0x0094c8                  _UART2PutHexWord
+                  0x0094ee                  _UART2PutHexDWord
+                  0x009552                  _UART2Char2Hex
+                  0x00958a                  _UART2Hex2Char
+                  0x00959c                  _UART2ClrError
+                  0x0095a6                  _TestCases
 
 External Symbols in Program Memory (by name):
 
                   0x003032                  _CharacterArray
-                  0x008940                  _CheckIdle
-                  0x0043ae                  _ConfigOutput
-                  0x008032                  _CopyPS4Report
-                  0x008042                  _CopySpaceNavigatorReport
-                  0x0082ee                  _CopyThrustmasterReport
+                  0x00895a                  _CheckIdle
+                  0x0043c8                  _ConfigOutput
+                  0x00804c                  _CopyPS4Report
+                  0x00805c                  _CopySpaceNavigatorReport
+                  0x008308                  _CopyThrustmasterReport
                   0x000898                  _DataEEInit
                   0x000606                  _DataEERead
                   0x00096c                  _DataEEWrite
                   0x000566                  _ErasePage
-                  0x008ae6                  _GetAnalogs
-                  0x008ada                  _GetButtonPress
+                  0x008b00                  _GetAnalogs
+                  0x008af4                  _GetButtonPress
                   0x003362                  _GetButtonSettings
-                  0x00902a                  _GetConnectedDeviceType
-                  0x00901e                  _GetEpBulkIn
-                  0x009024                  _GetEpBulkOut
-                  0x009012                  _GetEpInterruptIn
-                  0x009018                  _GetEpInterruptOut
-                  0x008c66                  _GetIdleTimer
-                  0x00429a                  _GetLEDBrightness
-                  0x00429e                  _GetLEDColorSetting
-                  0x008ae2                  _GetNewPress
+                  0x009044                  _GetConnectedDeviceType
+                  0x009038                  _GetEpBulkIn
+                  0x00903e                  _GetEpBulkOut
+                  0x00902c                  _GetEpInterruptIn
+                  0x009032                  _GetEpInterruptOut
+                  0x008c80                  _GetIdleTimer
+                  0x0042b4                  _GetLEDBrightness
+                  0x0042b8                  _GetLEDColorSetting
+                  0x008afc                  _GetNewPress
                   0x0005a2                  _GetNextAvailCount
-                  0x008af2                  _GetOutputPacket
-                  0x008afa                  _GetOutputReportBT
-                  0x008af6                  _GetOutputReportWire
-                  0x008aee                  _GetPS4Report
+                  0x008b0c                  _GetOutputPacket
+                  0x008b14                  _GetOutputReportBT
+                  0x008b10                  _GetOutputReportWire
+                  0x008b08                  _GetPS4Report
                   0x00050e                  _GetPageStatus
-                  0x008ade                  _GetPressDuration
+                  0x008af8                  _GetPressDuration
                   0x00335e                  _GetServoSettings
-                  0x004296                  _GetSpiBusMode
-                  0x0092ec                  _GetSpiInputPacket
-                  0x0092f0                  _GetSpiOutputStatePacket
+                  0x0042b0                  _GetSpiBusMode
+                  0x009306                  _GetSpiInputPacket
+                  0x00930a                  _GetSpiOutputStatePacket
                   0x003366                  _GetTimeoutSetting
-                  0x008aea                  _GetTouchpads
+                  0x008b04                  _GetTouchpads
                   0x003052                  _InitOutputs
-                  0x00902e                  _InitSPI
-                  0x00694e                  _InitializeSystem
-                  0x0042de                  _LoadDefaultSettings
-                  0x0090e2                  _LoadOutputStatePacketButtons
-                  0x009216                  _LoadOutputStatePacketServos
+                  0x009048                  _InitSPI
+                  0x006968                  _InitializeSystem
+                  0x0042f8                  _LoadDefaultSettings
+                  0x0090fc                  _LoadOutputStatePacketButtons
+                  0x009230                  _LoadOutputStatePacketServos
                   0x003346                  _LoadSavedSettings
-                  0x006f8c                  _ManageStateBluetooth
-                  0x007b54                  _ManageStateSpaceNavigator
-                  0x0078c2                  _ManageStateWire
+                  0x006fa6                  _ManageStateBluetooth
+                  0x007b6e                  _ManageStateSpaceNavigator
+                  0x0078dc                  _ManageStateWire
                   0x00069c                  _PackEE
-                  0x006a2e                  _ParseRx1PS4BT
-                  0x006ee6                  _ParseRx1PS4Wire
-                  0x006ef2                  _ParseRx1SpaceNavigator
-                  0x006f08                  _ParseRx1Thrustmaster
-                  0x006cb6                  _ParseRx2PS4BT
-                  0x0042a2                  _PrintIndexLabel
-                  0x004f9c                  _PrintMenu
+                  0x006a48                  _ParseRx1PS4BT
+                  0x006f00                  _ParseRx1PS4Wire
+                  0x006f0c                  _ParseRx1SpaceNavigator
+                  0x006f22                  _ParseRx1Thrustmaster
+                  0x006cd0                  _ParseRx2PS4BT
+                  0x0042bc                  _PrintIndexLabel
+                  0x004fb6                  _PrintMenu
                   0x000b8e                  _ReadPMHigh
                   0x000b92                  _ReadPMLow
-                  0x00893c                  _ResetIdleTimer
+                  0x008956                  _ResetIdleTimer
                   0x004228                  _ResetOutputs
-                  0x00693a                  _ResetStates
+                  0x006954                  _ResetStates
                   0x0031a4                  _SaveLoadSubroutine
                   0x003352                  _SaveSettings
-                  0x008c6a                  _SetConnectedDeviceType
-                  0x008c76                  _SetEpBulkIn
-                  0x008c7a                  _SetEpBulkOut
-                  0x008c6e                  _SetEpInterruptIn
-                  0x008c72                  _SetEpInterruptOut
-                  0x008afe                  _SetLEDColor
-                  0x008bce                  _SetLEDColorRGB
-                  0x008bdc                  _SetRumbleH
-                  0x008bea                  _SetRumbleL
-                  0x00958c                  _TestCases
-                  0x009538                  _UART2Char2Hex
-                  0x009582                  _UART2ClrError
-                  0x0092f4                  _UART2GetBaudError
-                  0x0092f6                  _UART2GetChar
-                  0x009570                  _UART2Hex2Char
-                  0x00930e                  _UART2Init
-                  0x009322                  _UART2IsPressed
-                  0x009344                  _UART2PrintString
-                  0x009336                  _UART2PutChar
-                  0x00935a                  _UART2PutDec
-                  0x0093be                  _UART2PutDecInt
-                  0x00941e                  _UART2PutDecLong
-                  0x009406                  _UART2PutDecSInt
-                  0x00947a                  _UART2PutDecSLong
-                  0x009496                  _UART2PutHex
-                  0x0094d4                  _UART2PutHexDWord
-                  0x0094ae                  _UART2PutHexWord
-                  0x0093a6                  _UART2PutSDec
-                  0x005050                  _USBHostClearEndpointErrors
-                  0x005078                  _USBHostDeviceSpecificClientDriver
-                  0x005080                  _USBHostDeviceStatus
-                  0x008fca                  _USBHostGenericAclRead
-                  0x008f88                  _USBHostGenericAclWrite
-                  0x008f3c                  _USBHostGenericClassRequest
-                  0x008de8                  _USBHostGenericEventHandler
-                  0x008e8c                  _USBHostGenericGetDeviceAddress
-                  0x008c7e                  _USBHostGenericInitBT
-                  0x008cde                  _USBHostGenericInitWire
-                  0x008eb2                  _USBHostGenericRead
-                  0x008efa                  _USBHostGenericWrite
-                  0x005604                  _USBHostInit
-                  0x008d36                  _USBHostInitSpaceMouse
-                  0x008d8c                  _USBHostInitThrustmaster
-                  0x005192                  _USBHostIssueDeviceRequest
-                  0x0052c6                  _USBHostRead
-                  0x00532e                  _USBHostResetDevice
-                  0x00534c                  _USBHostResumeDevice
-                  0x00539a                  _USBHostSetDeviceConfiguration
-                  0x0053d4                  _USBHostSetNAKTimeout
-                  0x005638                  _USBHostShutdown
-                  0x005460                  _USBHostSuspendDevice
-                  0x005a76                  _USBHostTasks
-                  0x005660                  _USBHostTerminateTransfer
-                  0x005680                  _USBHostTransferIsComplete
-                  0x0056de                  _USBHostVbusEvent
-                  0x00575c                  _USBHostWrite
-                  0x007b78                  _USB_ApplicationEventHandler
+                  0x008c84                  _SetConnectedDeviceType
+                  0x008c90                  _SetEpBulkIn
+                  0x008c94                  _SetEpBulkOut
+                  0x008c88                  _SetEpInterruptIn
+                  0x008c8c                  _SetEpInterruptOut
+                  0x008b18                  _SetLEDColor
+                  0x008be8                  _SetLEDColorRGB
+                  0x008bf6                  _SetRumbleH
+                  0x008c04                  _SetRumbleL
+                  0x0095a6                  _TestCases
+                  0x009552                  _UART2Char2Hex
+                  0x00959c                  _UART2ClrError
+                  0x00930e                  _UART2GetBaudError
+                  0x009310                  _UART2GetChar
+                  0x00958a                  _UART2Hex2Char
+                  0x009328                  _UART2Init
+                  0x00933c                  _UART2IsPressed
+                  0x00935e                  _UART2PrintString
+                  0x009350                  _UART2PutChar
+                  0x009374                  _UART2PutDec
+                  0x0093d8                  _UART2PutDecInt
+                  0x009438                  _UART2PutDecLong
+                  0x009420                  _UART2PutDecSInt
+                  0x009494                  _UART2PutDecSLong
+                  0x0094b0                  _UART2PutHex
+                  0x0094ee                  _UART2PutHexDWord
+                  0x0094c8                  _UART2PutHexWord
+                  0x0093c0                  _UART2PutSDec
+                  0x00506a                  _USBHostClearEndpointErrors
+                  0x005092                  _USBHostDeviceSpecificClientDriver
+                  0x00509a                  _USBHostDeviceStatus
+                  0x008fe4                  _USBHostGenericAclRead
+                  0x008fa2                  _USBHostGenericAclWrite
+                  0x008f56                  _USBHostGenericClassRequest
+                  0x008e02                  _USBHostGenericEventHandler
+                  0x008ea6                  _USBHostGenericGetDeviceAddress
+                  0x008c98                  _USBHostGenericInitBT
+                  0x008cf8                  _USBHostGenericInitWire
+                  0x008ecc                  _USBHostGenericRead
+                  0x008f14                  _USBHostGenericWrite
+                  0x00561e                  _USBHostInit
+                  0x008d50                  _USBHostInitSpaceMouse
+                  0x008da6                  _USBHostInitThrustmaster
+                  0x0051ac                  _USBHostIssueDeviceRequest
+                  0x0052e0                  _USBHostRead
+                  0x005348                  _USBHostResetDevice
+                  0x005366                  _USBHostResumeDevice
+                  0x0053b4                  _USBHostSetDeviceConfiguration
+                  0x0053ee                  _USBHostSetNAKTimeout
+                  0x005652                  _USBHostShutdown
+                  0x00547a                  _USBHostSuspendDevice
+                  0x005a90                  _USBHostTasks
+                  0x00567a                  _USBHostTerminateTransfer
+                  0x00569a                  _USBHostTransferIsComplete
+                  0x0056f8                  _USBHostVbusEvent
+                  0x005776                  _USBHostWrite
+                  0x007b92                  _USB_ApplicationEventHandler
                   0x000b96                  _UnlockPM
                   0x0004e4                  _UnlockWrite
-                  0x008bf8                  _UpdateBatteryDisplay
+                  0x008c12                  _UpdateBatteryDisplay
                   0x00336a                  _UpdateButtonOutputs
-                  0x00830a                  _UpdateCurrentStateBuffer
-                  0x008a36                  _UpdateNewPress
-                  0x008c4a                  _UpdateRumbleFeedback
+                  0x008324                  _UpdateCurrentStateBuffer
+                  0x008a50                  _UpdateNewPress
+                  0x008c64                  _UpdateRumbleFeedback
                   0x003848                  _UpdateServoOutputs
-                  0x006f54                  _WriteOutputReport
+                  0x006f6e                  _WriteOutputReport
                   0x000bb0                  _WritePMHigh
                   0x000bb4                  _WritePMHighB
                   0x000bb8                  _WritePMLow
                   0x000bbc                  _WritePMLowB
-                  0x006f32                  _Write_ACL_Command
-                  0x006f14                  _Write_HCI_Command
-                  0x007fc6                  __AddressError
+                  0x006f4c                  _Write_ACL_Command
+                  0x006f2e                  _Write_HCI_Command
+                  0x007fe0                  __AddressError
                   0x0002a4                  __DefaultInterrupt
-                  0x007f8e                  __INT1Interrupt
-                  0x00800e                  __MathError
-                  0x007f28                  __SPI1Interrupt
-                  0x007fea                  __StackError
+                  0x007fa8                  __INT1Interrupt
+                  0x008028                  __MathError
+                  0x007f42                  __SPI1Interrupt
+                  0x008004                  __StackError
                   0x004184                  __T3Interrupt
-                  0x007ebe                  __T4Interrupt
-                  0x00663e                  __USB1Interrupt
-                  0x005480                  __USB_CheckCommandAndEnumerationAttempts
-                  0x0057c4                  __USB_FindClassDriver
-                  0x0054ae                  __USB_FindDeviceLevelClientDriver
-                  0x005020                  __USB_FindEndpoint
-                  0x006282                  __USB_FindNextToken
-                  0x0060ba                  __USB_FindServiceEndpoint
-                  0x00557e                  __USB_FreeConfigMemory
-                  0x0055d0                  __USB_FreeMemory
-                  0x00514a                  __USB_InitControlRead
-                  0x0050f6                  __USB_InitControlWrite
-                  0x00526a                  __USB_InitRead
-                  0x005700                  __USB_InitWrite
-                  0x005404                  __USB_NotifyClients
-                  0x006608                  __USB_NotifyDataClients
-                  0x00584a                  __USB_ParseConfigurationDescriptor
-                  0x0050ba                  __USB_ResetDATA0
-                  0x006248                  __USB_SendToken
-                  0x00614c                  __USB_SetBDT
-                  0x005368                  __USB_TransferInProgress
+                  0x007ed8                  __T4Interrupt
+                  0x006658                  __USB1Interrupt
+                  0x00549a                  __USB_CheckCommandAndEnumerationAttempts
+                  0x0057de                  __USB_FindClassDriver
+                  0x0054c8                  __USB_FindDeviceLevelClientDriver
+                  0x00503a                  __USB_FindEndpoint
+                  0x00629c                  __USB_FindNextToken
+                  0x0060d4                  __USB_FindServiceEndpoint
+                  0x005598                  __USB_FreeConfigMemory
+                  0x0055ea                  __USB_FreeMemory
+                  0x005164                  __USB_InitControlRead
+                  0x005110                  __USB_InitControlWrite
+                  0x005284                  __USB_InitRead
+                  0x00571a                  __USB_InitWrite
+                  0x00541e                  __USB_NotifyClients
+                  0x006622                  __USB_NotifyDataClients
+                  0x005864                  __USB_ParseConfigurationDescriptor
+                  0x0050d4                  __USB_ResetDATA0
+                  0x006262                  __USB_SendToken
+                  0x006166                  __USB_SetBDT
+                  0x005382                  __USB_TransferInProgress
                   0x000bc0                  ___delay32
                   0x0002a8                  ___divsi3
                   0x0002e6                  ___mulp32eds3
@@ -555,7 +555,7 @@ External Symbols in Program Memory (by name):
                   0x002422                  _cid_host_sdp
                   0x000c00                  _emulationPages
                   0x000426                  _free
-                  0x007c88                  _main
+                  0x007ca2                  _main
                   0x000302                  _malloc
                   0x00048c                  _memcpy
                   0x000432                  _realloc
@@ -665,24 +665,24 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000      0x11a1d
+.debug_info       0x000000      0x11a28
  *(.debug_info)
  .debug_info      0x000000        0xac0 build/default/production/_ext/2108356922/uart2.o
  .debug_info      0x000ac0        0x7cf build/default/production/_ext/869223802/DEE Emulation 16-bit.o
  .debug_info      0x00128f         0xbc build/default/production/_ext/869223802/Flash Operations.o
  .debug_info      0x00134b       0x34e6 build/default/production/_ext/1360907413/usb_host.o
  .debug_info      0x004831        0xe16 build/default/production/_ext/1360907413/usb_host_generic_PS4.o
- .debug_info      0x005647       0x3919 build/default/production/_ext/1472/main.o
- .debug_info      0x008f60        0x7a9 build/default/production/_ext/1472/usb_config.o
- .debug_info      0x009709       0x3e02 build/default/production/_ext/1472/outputs.o
- .debug_info      0x00d50b        0xf0e build/default/production/_ext/1472/functional_test.o
- .debug_info      0x00e419       0x21f0 build/default/production/_ext/1472/PS4_SPI.o
- .debug_info      0x010609       0x1227 build/default/production/_ext/1472/PS4_controller.o
- .debug_info      0x011830         0xeb c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
- .debug_info      0x01191b        0x102 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
+ .debug_info      0x005647       0x391a build/default/production/_ext/1472/main.o
+ .debug_info      0x008f61        0x7a9 build/default/production/_ext/1472/usb_config.o
+ .debug_info      0x00970a       0x3e0c build/default/production/_ext/1472/outputs.o
+ .debug_info      0x00d516        0xf0e build/default/production/_ext/1472/functional_test.o
+ .debug_info      0x00e424       0x21f0 build/default/production/_ext/1472/PS4_SPI.o
+ .debug_info      0x010614       0x1227 build/default/production/_ext/1472/PS4_controller.o
+ .debug_info      0x01183b         0xeb c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
+ .debug_info      0x011926        0x102 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000       0x13be
+.debug_abbrev     0x000000       0x13cb
  *(.debug_abbrev)
  .debug_abbrev    0x000000        0x1d0 build/default/production/_ext/2108356922/uart2.o
  .debug_abbrev    0x0001d0        0x1e3 build/default/production/_ext/869223802/DEE Emulation 16-bit.o
@@ -691,14 +691,14 @@ __CONFIG1         0x00abfe          0x2
  .debug_abbrev    0x00068b        0x1dd build/default/production/_ext/1360907413/usb_host_generic_PS4.o
  .debug_abbrev    0x000868        0x275 build/default/production/_ext/1472/main.o
  .debug_abbrev    0x000add        0x147 build/default/production/_ext/1472/usb_config.o
- .debug_abbrev    0x000c24        0x281 build/default/production/_ext/1472/outputs.o
- .debug_abbrev    0x000ea5         0x99 build/default/production/_ext/1472/functional_test.o
- .debug_abbrev    0x000f3e        0x1ad build/default/production/_ext/1472/PS4_SPI.o
- .debug_abbrev    0x0010eb        0x1f0 build/default/production/_ext/1472/PS4_controller.o
- .debug_abbrev    0x0012db         0x6a c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
- .debug_abbrev    0x001345         0x79 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
+ .debug_abbrev    0x000c24        0x28e build/default/production/_ext/1472/outputs.o
+ .debug_abbrev    0x000eb2         0x99 build/default/production/_ext/1472/functional_test.o
+ .debug_abbrev    0x000f4b        0x1ad build/default/production/_ext/1472/PS4_SPI.o
+ .debug_abbrev    0x0010f8        0x1f0 build/default/production/_ext/1472/PS4_controller.o
+ .debug_abbrev    0x0012e8         0x6a c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
+ .debug_abbrev    0x001352         0x79 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
 
-.debug_line       0x000000       0x8ee8
+.debug_line       0x000000       0x8ef8
  *(.debug_line)
  .debug_line      0x000000        0x51a build/default/production/_ext/2108356922/uart2.o
  .debug_line      0x00051a        0x729 build/default/production/_ext/869223802/DEE Emulation 16-bit.o
@@ -707,12 +707,12 @@ __CONFIG1         0x00abfe          0x2
  .debug_line      0x002ea9        0x7ad build/default/production/_ext/1360907413/usb_host_generic_PS4.o
  .debug_line      0x003656       0x22bd build/default/production/_ext/1472/main.o
  .debug_line      0x005913        0x1db build/default/production/_ext/1472/usb_config.o
- .debug_line      0x005aee       0x1fee build/default/production/_ext/1472/outputs.o
- .debug_line      0x007adc        0x4a0 build/default/production/_ext/1472/functional_test.o
- .debug_line      0x007f7c        0x389 build/default/production/_ext/1472/PS4_SPI.o
- .debug_line      0x008305        0xb04 build/default/production/_ext/1472/PS4_controller.o
- .debug_line      0x008e09         0x78 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
- .debug_line      0x008e81         0x67 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
+ .debug_line      0x005aee       0x1ffe build/default/production/_ext/1472/outputs.o
+ .debug_line      0x007aec        0x4a0 build/default/production/_ext/1472/functional_test.o
+ .debug_line      0x007f8c        0x389 build/default/production/_ext/1472/PS4_SPI.o
+ .debug_line      0x008315        0xb04 build/default/production/_ext/1472/PS4_controller.o
+ .debug_line      0x008e19         0x78 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(sbrk.eo)
+ .debug_line      0x008e91         0x67 c:/program files (x86)/microchip/mplab c30/bin/bin/../../lib\libpic30-elf.a(brk.elo)
 
 .debug_frame      0x000000        0xb4a
  *(.debug_frame)
@@ -808,9 +808,9 @@ __CONFIG1         0x00abfe          0x2
 .ivt              0x000004         0xfc
                   0x000004          0x4 LONG 0x2a4 DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
                   0x000006          0x4 LONG 0x2a4 DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
-                  0x000008          0x4 LONG 0x7fc6 DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
-                  0x00000a          0x4 LONG 0x7fea DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
-                  0x00000c          0x4 LONG 0x800e DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
+                  0x000008          0x4 LONG 0x7fe0 DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
+                  0x00000a          0x4 LONG 0x8004 DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
+                  0x00000c          0x4 LONG 0x8028 DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
                   0x00000e          0x4 LONG 0x2a4 DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
                   0x000010          0x4 LONG 0x2a4 DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
                   0x000012          0x4 LONG 0x2a4 DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
@@ -824,7 +824,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000022          0x4 LONG 0x2a4 DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000024          0x4 LONG 0x4184 DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000026          0x4 LONG 0x2a4 DEFINED (__SPI1ErrInterrupt)?ABSOLUTE (__SPI1ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000028          0x4 LONG 0x7f28 DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000028          0x4 LONG 0x7f42 DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x2a4 DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002c          0x4 LONG 0x2a4 DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002e          0x4 LONG 0x2a4 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -834,14 +834,14 @@ __CONFIG1         0x00abfe          0x2
                   0x000036          0x4 LONG 0x2a4 DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x2a4 DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003a          0x4 LONG 0x2a4 DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003c          0x4 LONG 0x7f8e DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003c          0x4 LONG 0x7fa8 DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003e          0x4 LONG 0x2a4 DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x2a4 DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000042          0x4 LONG 0x2a4 DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000044          0x4 LONG 0x2a4 DEFINED (__Interrupt24)?ABSOLUTE (__Interrupt24):ABSOLUTE (__DefaultInterrupt)
                   0x000046          0x4 LONG 0x2a4 DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000048          0x4 LONG 0x2a4 DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004a          0x4 LONG 0x7ebe DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004a          0x4 LONG 0x7ed8 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004c          0x4 LONG 0x2a4 DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004e          0x4 LONG 0x2a4 DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000050          0x4 LONG 0x2a4 DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
@@ -900,7 +900,7 @@ __CONFIG1         0x00abfe          0x2
                   0x0000ba          0x4 LONG 0x2a4 DEFINED (__U3TXInterrupt)?ABSOLUTE (__U3TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000bc          0x4 LONG 0x2a4 DEFINED (__SI2C3Interrupt)?ABSOLUTE (__SI2C3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000be          0x4 LONG 0x2a4 DEFINED (__MI2C3Interrupt)?ABSOLUTE (__MI2C3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0000c0          0x4 LONG 0x663e DEFINED (__USB1Interrupt)?ABSOLUTE (__USB1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0000c0          0x4 LONG 0x6658 DEFINED (__USB1Interrupt)?ABSOLUTE (__USB1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c2          0x4 LONG 0x2a4 DEFINED (__U4ErrInterrupt)?ABSOLUTE (__U4ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c4          0x4 LONG 0x2a4 DEFINED (__U4RXInterrupt)?ABSOLUTE (__U4RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000c6          0x4 LONG 0x2a4 DEFINED (__U4TXInterrupt)?ABSOLUTE (__U4TXInterrupt):ABSOLUTE (__DefaultInterrupt)
@@ -936,9 +936,9 @@ __CONFIG1         0x00abfe          0x2
 .aivt             0x000104         0xfc
                   0x000104          0x4 LONG 0x2a4 DEFINED (__AltReservedTrap0)?ABSOLUTE (__AltReservedTrap0):DEFINED (__ReservedTrap0)?ABSOLUTE (__ReservedTrap0):ABSOLUTE (__DefaultInterrupt)
                   0x000106          0x4 LONG 0x2a4 DEFINED (__AltOscillatorFail)?ABSOLUTE (__AltOscillatorFail):DEFINED (__OscillatorFail)?ABSOLUTE (__OscillatorFail):ABSOLUTE (__DefaultInterrupt)
-                  0x000108          0x4 LONG 0x7fc6 DEFINED (__AltAddressError)?ABSOLUTE (__AltAddressError):DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
-                  0x00010a          0x4 LONG 0x7fea DEFINED (__AltStackError)?ABSOLUTE (__AltStackError):DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
-                  0x00010c          0x4 LONG 0x800e DEFINED (__AltMathError)?ABSOLUTE (__AltMathError):DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
+                  0x000108          0x4 LONG 0x7fe0 DEFINED (__AltAddressError)?ABSOLUTE (__AltAddressError):DEFINED (__AddressError)?ABSOLUTE (__AddressError):ABSOLUTE (__DefaultInterrupt)
+                  0x00010a          0x4 LONG 0x8004 DEFINED (__AltStackError)?ABSOLUTE (__AltStackError):DEFINED (__StackError)?ABSOLUTE (__StackError):ABSOLUTE (__DefaultInterrupt)
+                  0x00010c          0x4 LONG 0x8028 DEFINED (__AltMathError)?ABSOLUTE (__AltMathError):DEFINED (__MathError)?ABSOLUTE (__MathError):ABSOLUTE (__DefaultInterrupt)
                   0x00010e          0x4 LONG 0x2a4 DEFINED (__AltReservedTrap5)?ABSOLUTE (__AltReservedTrap5):DEFINED (__ReservedTrap5)?ABSOLUTE (__ReservedTrap5):ABSOLUTE (__DefaultInterrupt)
                   0x000110          0x4 LONG 0x2a4 DEFINED (__AltReservedTrap6)?ABSOLUTE (__AltReservedTrap6):DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
                   0x000112          0x4 LONG 0x2a4 DEFINED (__AltReservedTrap7)?ABSOLUTE (__AltReservedTrap7):DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
@@ -952,7 +952,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000122          0x4 LONG 0x2a4 DEFINED (__AltT2Interrupt)?ABSOLUTE (__AltT2Interrupt):DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000124          0x4 LONG 0x4184 DEFINED (__AltT3Interrupt)?ABSOLUTE (__AltT3Interrupt):DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000126          0x4 LONG 0x2a4 DEFINED (__AltSPI1ErrInterrupt)?ABSOLUTE (__AltSPI1ErrInterrupt):DEFINED (__SPI1ErrInterrupt)?ABSOLUTE (__SPI1ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000128          0x4 LONG 0x7f28 DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000128          0x4 LONG 0x7f42 DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012a          0x4 LONG 0x2a4 DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012c          0x4 LONG 0x2a4 DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012e          0x4 LONG 0x2a4 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -962,14 +962,14 @@ __CONFIG1         0x00abfe          0x2
                   0x000136          0x4 LONG 0x2a4 DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000138          0x4 LONG 0x2a4 DEFINED (__AltCompInterrupt)?ABSOLUTE (__AltCompInterrupt):DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013a          0x4 LONG 0x2a4 DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00013c          0x4 LONG 0x7f8e DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00013c          0x4 LONG 0x7fa8 DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013e          0x4 LONG 0x2a4 DEFINED (__AltInterrupt21)?ABSOLUTE (__AltInterrupt21):DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000140          0x4 LONG 0x2a4 DEFINED (__AltIC7Interrupt)?ABSOLUTE (__AltIC7Interrupt):DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000142          0x4 LONG 0x2a4 DEFINED (__AltIC8Interrupt)?ABSOLUTE (__AltIC8Interrupt):DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000144          0x4 LONG 0x2a4 DEFINED (__AltInterrupt24)?ABSOLUTE (__AltInterrupt24):DEFINED (__Interrupt24)?ABSOLUTE (__Interrupt24):ABSOLUTE (__DefaultInterrupt)
                   0x000146          0x4 LONG 0x2a4 DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000148          0x4 LONG 0x2a4 DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00014a          0x4 LONG 0x7ebe DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00014a          0x4 LONG 0x7ed8 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00014c          0x4 LONG 0x2a4 DEFINED (__AltT5Interrupt)?ABSOLUTE (__AltT5Interrupt):DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00014e          0x4 LONG 0x2a4 DEFINED (__AltINT2Interrupt)?ABSOLUTE (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000150          0x4 LONG 0x2a4 DEFINED (__AltU2RXInterrupt)?ABSOLUTE (__AltU2RXInterrupt):DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1028,7 +1028,7 @@ __CONFIG1         0x00abfe          0x2
                   0x0001ba          0x4 LONG 0x2a4 DEFINED (__AltU3TXInterrupt)?ABSOLUTE (__AltU3TXInterrupt):DEFINED (__U3TXInterrupt)?ABSOLUTE (__U3TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001bc          0x4 LONG 0x2a4 DEFINED (__AltSI2C3Interrupt)?ABSOLUTE (__AltSI2C3Interrupt):DEFINED (__SI2C3Interrupt)?ABSOLUTE (__SI2C3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001be          0x4 LONG 0x2a4 DEFINED (__AltMI2C3Interrupt)?ABSOLUTE (__AltMI2C3Interrupt):DEFINED (__MI2C3Interrupt)?ABSOLUTE (__MI2C3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x0001c0          0x4 LONG 0x663e DEFINED (__AltUSB1Interrupt)?ABSOLUTE (__AltUSB1Interrupt):DEFINED (__USB1Interrupt)?ABSOLUTE (__USB1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x0001c0          0x4 LONG 0x6658 DEFINED (__AltUSB1Interrupt)?ABSOLUTE (__AltUSB1Interrupt):DEFINED (__USB1Interrupt)?ABSOLUTE (__USB1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001c2          0x4 LONG 0x2a4 DEFINED (__AltU4ErrInterrupt)?ABSOLUTE (__AltU4ErrInterrupt):DEFINED (__U4ErrInterrupt)?ABSOLUTE (__U4ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001c4          0x4 LONG 0x2a4 DEFINED (__AltU4RXInterrupt)?ABSOLUTE (__AltU4RXInterrupt):DEFINED (__U4RXInterrupt)?ABSOLUTE (__U4RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001c6          0x4 LONG 0x2a4 DEFINED (__AltU4TXInterrupt)?ABSOLUTE (__AltU4TXInterrupt):DEFINED (__U4TXInterrupt)?ABSOLUTE (__U4TXInterrupt):ABSOLUTE (__DefaultInterrupt)
@@ -2293,8 +2293,8 @@ _02e44cb0622807b5
                     0xb032                  _CharacterArray
  .const             0xb042         0x10 build/default/production/_ext/869223802/DEE Emulation 16-bit.o
 
-.text             0x003052       0x5c18
- .text            0x003052       0x1fce build/default/production/_ext/1472/outputs.o
+.text             0x003052       0x5c32
+ .text            0x003052       0x1fe8 build/default/production/_ext/1472/outputs.o
                   0x003052                  _InitOutputs
                   0x0031a4                  _SaveLoadSubroutine
                   0x003346                  _LoadSavedSettings
@@ -2306,97 +2306,97 @@ _02e44cb0622807b5
                   0x003848                  _UpdateServoOutputs
                   0x004184                  __T3Interrupt
                   0x004228                  _ResetOutputs
-                  0x004296                  _GetSpiBusMode
-                  0x00429a                  _GetLEDBrightness
-                  0x00429e                  _GetLEDColorSetting
-                  0x0042a2                  _PrintIndexLabel
-                  0x0042de                  _LoadDefaultSettings
-                  0x0043ae                  _ConfigOutput
-                  0x004f9c                  _PrintMenu
- .text            0x005020       0x191a build/default/production/_ext/1360907413/usb_host.o
-                  0x005020                  __USB_FindEndpoint
-                  0x005050                  _USBHostClearEndpointErrors
-                  0x005078                  _USBHostDeviceSpecificClientDriver
-                  0x005080                  _USBHostDeviceStatus
-                  0x0050ba                  __USB_ResetDATA0
-                  0x0050f6                  __USB_InitControlWrite
-                  0x00514a                  __USB_InitControlRead
-                  0x005192                  _USBHostIssueDeviceRequest
-                  0x00526a                  __USB_InitRead
-                  0x0052c6                  _USBHostRead
-                  0x00532e                  _USBHostResetDevice
-                  0x00534c                  _USBHostResumeDevice
-                  0x005368                  __USB_TransferInProgress
-                  0x00539a                  _USBHostSetDeviceConfiguration
-                  0x0053d4                  _USBHostSetNAKTimeout
-                  0x005404                  __USB_NotifyClients
-                  0x005460                  _USBHostSuspendDevice
-                  0x005480                  __USB_CheckCommandAndEnumerationAttempts
-                  0x0054ae                  __USB_FindDeviceLevelClientDriver
-                  0x00557e                  __USB_FreeConfigMemory
-                  0x0055d0                  __USB_FreeMemory
-                  0x005604                  _USBHostInit
-                  0x005638                  _USBHostShutdown
-                  0x005660                  _USBHostTerminateTransfer
-                  0x005680                  _USBHostTransferIsComplete
-                  0x0056de                  _USBHostVbusEvent
-                  0x005700                  __USB_InitWrite
-                  0x00575c                  _USBHostWrite
-                  0x0057c4                  __USB_FindClassDriver
-                  0x00584a                  __USB_ParseConfigurationDescriptor
-                  0x005a76                  _USBHostTasks
-                  0x0060ba                  __USB_FindServiceEndpoint
-                  0x00614c                  __USB_SetBDT
-                  0x006248                  __USB_SendToken
-                  0x006282                  __USB_FindNextToken
-                  0x006608                  __USB_NotifyDataClients
-                  0x00663e                  __USB1Interrupt
- .text            0x00693a       0x16f8 build/default/production/_ext/1472/main.o
-                  0x00693a                  _ResetStates
-                  0x00694e                  _InitializeSystem
-                  0x006a2e                  _ParseRx1PS4BT
-                  0x006cb6                  _ParseRx2PS4BT
-                  0x006ee6                  _ParseRx1PS4Wire
-                  0x006ef2                  _ParseRx1SpaceNavigator
-                  0x006f08                  _ParseRx1Thrustmaster
-                  0x006f14                  _Write_HCI_Command
-                  0x006f32                  _Write_ACL_Command
-                  0x006f54                  _WriteOutputReport
-                  0x006f8c                  _ManageStateBluetooth
-                  0x0078c2                  _ManageStateWire
-                  0x007b54                  _ManageStateSpaceNavigator
-                  0x007b78                  _USB_ApplicationEventHandler
-                  0x007c88                  _main
-                  0x007ebe                  __T4Interrupt
-                  0x007f28                  __SPI1Interrupt
-                  0x007f8e                  __INT1Interrupt
-                  0x007fc6                  __AddressError
-                  0x007fea                  __StackError
-                  0x00800e                  __MathError
- .text            0x008032        0xc38 build/default/production/_ext/1472/PS4_controller.o
-                  0x008032                  _CopyPS4Report
-                  0x008042                  _CopySpaceNavigatorReport
-                  0x0082ee                  _CopyThrustmasterReport
-                  0x00830a                  _UpdateCurrentStateBuffer
-                  0x00893c                  _ResetIdleTimer
-                  0x008940                  _CheckIdle
-                  0x008a36                  _UpdateNewPress
-                  0x008ada                  _GetButtonPress
-                  0x008ade                  _GetPressDuration
-                  0x008ae2                  _GetNewPress
-                  0x008ae6                  _GetAnalogs
-                  0x008aea                  _GetTouchpads
-                  0x008aee                  _GetPS4Report
-                  0x008af2                  _GetOutputPacket
-                  0x008af6                  _GetOutputReportWire
-                  0x008afa                  _GetOutputReportBT
-                  0x008afe                  _SetLEDColor
-                  0x008bce                  _SetLEDColorRGB
-                  0x008bdc                  _SetRumbleH
-                  0x008bea                  _SetRumbleL
-                  0x008bf8                  _UpdateBatteryDisplay
-                  0x008c4a                  _UpdateRumbleFeedback
-                  0x008c66                  _GetIdleTimer
+                  0x0042b0                  _GetSpiBusMode
+                  0x0042b4                  _GetLEDBrightness
+                  0x0042b8                  _GetLEDColorSetting
+                  0x0042bc                  _PrintIndexLabel
+                  0x0042f8                  _LoadDefaultSettings
+                  0x0043c8                  _ConfigOutput
+                  0x004fb6                  _PrintMenu
+ .text            0x00503a       0x191a build/default/production/_ext/1360907413/usb_host.o
+                  0x00503a                  __USB_FindEndpoint
+                  0x00506a                  _USBHostClearEndpointErrors
+                  0x005092                  _USBHostDeviceSpecificClientDriver
+                  0x00509a                  _USBHostDeviceStatus
+                  0x0050d4                  __USB_ResetDATA0
+                  0x005110                  __USB_InitControlWrite
+                  0x005164                  __USB_InitControlRead
+                  0x0051ac                  _USBHostIssueDeviceRequest
+                  0x005284                  __USB_InitRead
+                  0x0052e0                  _USBHostRead
+                  0x005348                  _USBHostResetDevice
+                  0x005366                  _USBHostResumeDevice
+                  0x005382                  __USB_TransferInProgress
+                  0x0053b4                  _USBHostSetDeviceConfiguration
+                  0x0053ee                  _USBHostSetNAKTimeout
+                  0x00541e                  __USB_NotifyClients
+                  0x00547a                  _USBHostSuspendDevice
+                  0x00549a                  __USB_CheckCommandAndEnumerationAttempts
+                  0x0054c8                  __USB_FindDeviceLevelClientDriver
+                  0x005598                  __USB_FreeConfigMemory
+                  0x0055ea                  __USB_FreeMemory
+                  0x00561e                  _USBHostInit
+                  0x005652                  _USBHostShutdown
+                  0x00567a                  _USBHostTerminateTransfer
+                  0x00569a                  _USBHostTransferIsComplete
+                  0x0056f8                  _USBHostVbusEvent
+                  0x00571a                  __USB_InitWrite
+                  0x005776                  _USBHostWrite
+                  0x0057de                  __USB_FindClassDriver
+                  0x005864                  __USB_ParseConfigurationDescriptor
+                  0x005a90                  _USBHostTasks
+                  0x0060d4                  __USB_FindServiceEndpoint
+                  0x006166                  __USB_SetBDT
+                  0x006262                  __USB_SendToken
+                  0x00629c                  __USB_FindNextToken
+                  0x006622                  __USB_NotifyDataClients
+                  0x006658                  __USB1Interrupt
+ .text            0x006954       0x16f8 build/default/production/_ext/1472/main.o
+                  0x006954                  _ResetStates
+                  0x006968                  _InitializeSystem
+                  0x006a48                  _ParseRx1PS4BT
+                  0x006cd0                  _ParseRx2PS4BT
+                  0x006f00                  _ParseRx1PS4Wire
+                  0x006f0c                  _ParseRx1SpaceNavigator
+                  0x006f22                  _ParseRx1Thrustmaster
+                  0x006f2e                  _Write_HCI_Command
+                  0x006f4c                  _Write_ACL_Command
+                  0x006f6e                  _WriteOutputReport
+                  0x006fa6                  _ManageStateBluetooth
+                  0x0078dc                  _ManageStateWire
+                  0x007b6e                  _ManageStateSpaceNavigator
+                  0x007b92                  _USB_ApplicationEventHandler
+                  0x007ca2                  _main
+                  0x007ed8                  __T4Interrupt
+                  0x007f42                  __SPI1Interrupt
+                  0x007fa8                  __INT1Interrupt
+                  0x007fe0                  __AddressError
+                  0x008004                  __StackError
+                  0x008028                  __MathError
+ .text            0x00804c        0xc38 build/default/production/_ext/1472/PS4_controller.o
+                  0x00804c                  _CopyPS4Report
+                  0x00805c                  _CopySpaceNavigatorReport
+                  0x008308                  _CopyThrustmasterReport
+                  0x008324                  _UpdateCurrentStateBuffer
+                  0x008956                  _ResetIdleTimer
+                  0x00895a                  _CheckIdle
+                  0x008a50                  _UpdateNewPress
+                  0x008af4                  _GetButtonPress
+                  0x008af8                  _GetPressDuration
+                  0x008afc                  _GetNewPress
+                  0x008b00                  _GetAnalogs
+                  0x008b04                  _GetTouchpads
+                  0x008b08                  _GetPS4Report
+                  0x008b0c                  _GetOutputPacket
+                  0x008b10                  _GetOutputReportWire
+                  0x008b14                  _GetOutputReportBT
+                  0x008b18                  _SetLEDColor
+                  0x008be8                  _SetLEDColorRGB
+                  0x008bf6                  _SetRumbleH
+                  0x008c04                  _SetRumbleL
+                  0x008c12                  _UpdateBatteryDisplay
+                  0x008c64                  _UpdateRumbleFeedback
+                  0x008c80                  _GetIdleTimer
 
 .text             0x0004e4        0x59c
  .text            0x0004e4        0x59c build/default/production/_ext/869223802/DEE Emulation 16-bit.o
@@ -2409,56 +2409,56 @@ _02e44cb0622807b5
                   0x000898                  _DataEEInit
                   0x00096c                  _DataEEWrite
 
-.text             0x008c6a        0xaaa
- .text            0x008c6a        0x3c4 build/default/production/_ext/1360907413/usb_host_generic_PS4.o
-                  0x008c6a                  _SetConnectedDeviceType
-                  0x008c6e                  _SetEpInterruptIn
-                  0x008c72                  _SetEpInterruptOut
-                  0x008c76                  _SetEpBulkIn
-                  0x008c7a                  _SetEpBulkOut
-                  0x008c7e                  _USBHostGenericInitBT
-                  0x008cde                  _USBHostGenericInitWire
-                  0x008d36                  _USBHostInitSpaceMouse
-                  0x008d8c                  _USBHostInitThrustmaster
-                  0x008de8                  _USBHostGenericEventHandler
-                  0x008e8c                  _USBHostGenericGetDeviceAddress
-                  0x008eb2                  _USBHostGenericRead
-                  0x008efa                  _USBHostGenericWrite
-                  0x008f3c                  _USBHostGenericClassRequest
-                  0x008f88                  _USBHostGenericAclWrite
-                  0x008fca                  _USBHostGenericAclRead
-                  0x009012                  _GetEpInterruptIn
-                  0x009018                  _GetEpInterruptOut
-                  0x00901e                  _GetEpBulkIn
-                  0x009024                  _GetEpBulkOut
-                  0x00902a                  _GetConnectedDeviceType
- .text            0x00902e        0x2c6 build/default/production/_ext/1472/PS4_SPI.o
-                  0x00902e                  _InitSPI
-                  0x0090e2                  _LoadOutputStatePacketButtons
-                  0x009216                  _LoadOutputStatePacketServos
-                  0x0092ec                  _GetSpiInputPacket
-                  0x0092f0                  _GetSpiOutputStatePacket
- .text            0x0092f4        0x298 build/default/production/_ext/2108356922/uart2.o
-                  0x0092f4                  _UART2GetBaudError
-                  0x0092f6                  _UART2GetChar
-                  0x00930e                  _UART2Init
-                  0x009322                  _UART2IsPressed
-                  0x009336                  _UART2PutChar
-                  0x009344                  _UART2PrintString
-                  0x00935a                  _UART2PutDec
-                  0x0093a6                  _UART2PutSDec
-                  0x0093be                  _UART2PutDecInt
-                  0x009406                  _UART2PutDecSInt
-                  0x00941e                  _UART2PutDecLong
-                  0x00947a                  _UART2PutDecSLong
-                  0x009496                  _UART2PutHex
-                  0x0094ae                  _UART2PutHexWord
-                  0x0094d4                  _UART2PutHexDWord
-                  0x009538                  _UART2Char2Hex
-                  0x009570                  _UART2Hex2Char
-                  0x009582                  _UART2ClrError
- .text            0x00958c        0x188 build/default/production/_ext/1472/functional_test.o
-                  0x00958c                  _TestCases
+.text             0x008c84        0xaaa
+ .text            0x008c84        0x3c4 build/default/production/_ext/1360907413/usb_host_generic_PS4.o
+                  0x008c84                  _SetConnectedDeviceType
+                  0x008c88                  _SetEpInterruptIn
+                  0x008c8c                  _SetEpInterruptOut
+                  0x008c90                  _SetEpBulkIn
+                  0x008c94                  _SetEpBulkOut
+                  0x008c98                  _USBHostGenericInitBT
+                  0x008cf8                  _USBHostGenericInitWire
+                  0x008d50                  _USBHostInitSpaceMouse
+                  0x008da6                  _USBHostInitThrustmaster
+                  0x008e02                  _USBHostGenericEventHandler
+                  0x008ea6                  _USBHostGenericGetDeviceAddress
+                  0x008ecc                  _USBHostGenericRead
+                  0x008f14                  _USBHostGenericWrite
+                  0x008f56                  _USBHostGenericClassRequest
+                  0x008fa2                  _USBHostGenericAclWrite
+                  0x008fe4                  _USBHostGenericAclRead
+                  0x00902c                  _GetEpInterruptIn
+                  0x009032                  _GetEpInterruptOut
+                  0x009038                  _GetEpBulkIn
+                  0x00903e                  _GetEpBulkOut
+                  0x009044                  _GetConnectedDeviceType
+ .text            0x009048        0x2c6 build/default/production/_ext/1472/PS4_SPI.o
+                  0x009048                  _InitSPI
+                  0x0090fc                  _LoadOutputStatePacketButtons
+                  0x009230                  _LoadOutputStatePacketServos
+                  0x009306                  _GetSpiInputPacket
+                  0x00930a                  _GetSpiOutputStatePacket
+ .text            0x00930e        0x298 build/default/production/_ext/2108356922/uart2.o
+                  0x00930e                  _UART2GetBaudError
+                  0x009310                  _UART2GetChar
+                  0x009328                  _UART2Init
+                  0x00933c                  _UART2IsPressed
+                  0x009350                  _UART2PutChar
+                  0x00935e                  _UART2PrintString
+                  0x009374                  _UART2PutDec
+                  0x0093c0                  _UART2PutSDec
+                  0x0093d8                  _UART2PutDecInt
+                  0x009420                  _UART2PutDecSInt
+                  0x009438                  _UART2PutDecLong
+                  0x009494                  _UART2PutDecSLong
+                  0x0094b0                  _UART2PutHex
+                  0x0094c8                  _UART2PutHexWord
+                  0x0094ee                  _UART2PutHexDWord
+                  0x009552                  _UART2Char2Hex
+                  0x00958a                  _UART2Hex2Char
+                  0x00959c                  _UART2ClrError
+ .text            0x0095a6        0x188 build/default/production/_ext/1472/functional_test.o
+                  0x0095a6                  _TestCases
 
 .dinit            0x000a80        0x10e
  .dinit           0x000a80        0x10e data_init

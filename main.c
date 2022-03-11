@@ -21,6 +21,7 @@
  overwritten by the Arduino.
  *3.01 5/10/21 Added function to allow servo to be remapped to buttons
  *3.11 03/08/22 Fixed bug in servo button remapping code, fixed bug in tilt incremental mode initial servo state
+ *3.12 03/10/22 In incremental mode, servo will move to offset after resetting outputs on startup or disconnect instead of normal center.
 Software License Agreement
 
 The software supplied herewith by Microchip Technology Incorporated

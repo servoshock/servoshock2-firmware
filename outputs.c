@@ -1965,6 +1965,7 @@ void __attribute__((__interrupt__, auto_psv))_T3Interrupt(void) {
 
 
 void ResetOutputs(CONTROLLER_IN* ControllerIn) {
+    int i;
 
     UART2PrintString("***Reset Outputs.***\n\r");
     ControllerIn->triangle = 0;
@@ -1993,6 +1994,9 @@ void ResetOutputs(CONTROLLER_IN* ControllerIn) {
     ControllerIn->accelZ = ServoSettings[TILT_Y].zeroPosition;
     ControllerIn->tpad[0].finger[0].noFinger = 1;
     ControllerIn->tpad[0].finger[1].noFinger = 1;
+    for ( i=0; i<NUM_SERVOS; i++){
+        servoState[i] = 300000 + 1000*(signed long)ServoSettings[i].offset; 
+    }
 
 
     CopyPS4Report(ControllerIn);
